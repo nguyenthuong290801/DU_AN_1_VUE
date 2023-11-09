@@ -1,22 +1,22 @@
 <template>
     <Splide :options="options" aria-label="My Favorite Images">
         <SplideSlide>
-            <img src="../../../assets/img/banner-4.jpg" alt="Sample 1">
+            <img src="../../assets/img/banner-4.jpg" alt="Sample 1">
         </SplideSlide>
         <SplideSlide>
-            <img src="../../../assets/img/banner-2.jpg" alt="Sample 2">
+            <img src="../../assets/img/banner-2.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-            <img src="../../../assets/img/banner-3.jpg" alt="Sample 2">
+            <img src="../../assets/img/banner-3.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-            <img src="../../../assets/img/banner-1.jpg" alt="Sample 2">
+            <img src="../../assets/img/banner-1.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-            <img src="../../../assets/img/banner-5.jpg" alt="Sample 2">
+            <img src="../../assets/img/banner-5.jpg" alt="Sample 2">
         </SplideSlide>
         <SplideSlide>
-            <img src="../../../assets/img/banner-6.jpg" alt="Sample 2">
+            <img src="../../assets/img/banner-6.jpg" alt="Sample 2">
         </SplideSlide>
     </Splide>
 </template>
