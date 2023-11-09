@@ -17,7 +17,7 @@
                             <div class="">
                                 <div class="justify-content-between">
                                     <div class="">
-                                        <img src="../../assets/img/banner_small2.jpg" alt="Credit Card"
+                                        <img src="../assets/img/banner_small2.jpg" alt="Credit Card"
                                             class="w-100 rounded-sm cover" />
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@
                                     <div class="">
                                         <div class="div">
 
-                                            <img src="../../assets/img/banner_small3.jpg" alt="Credit Card"
+                                            <img src="../assets/img/banner_small3.jpg" alt="Credit Card"
                                                 class="w-100 rounded-sm" />
                                         </div>
                                     </div>
@@ -49,7 +49,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-11.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-11.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Khung Giờ Săn Sale</div>
                     </div>
@@ -57,7 +57,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-12.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-12.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Gì Cũng Rẻ - Mua Là Freeship</div>
                     </div>
@@ -65,7 +65,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-13.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-13.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Mã Giảm Giá</div>
                     </div>
@@ -73,7 +73,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-14.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-14.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Miễn Phí Vận Chuyển</div>
                     </div>
@@ -81,7 +81,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-15.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-15.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Bắt Trend - Giá Sốc</div>
                     </div>
@@ -89,7 +89,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-16.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-16.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Hoàn Xu Xtra Từ 100K</div>
                     </div>
@@ -97,7 +97,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-17.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-17.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Hàng Hiệu Giá Tốt</div>
                     </div>
@@ -105,7 +105,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-18.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-18.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Kho Xu Tích Lũy</div>
                     </div>
@@ -113,7 +113,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-19.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-19.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Nạp Điện Thoại & Thẻ Game</div>
                     </div>
@@ -121,7 +121,7 @@
                 <a class="text-decoration-none text-black" href="">
                     <div class="home-page-a02-nav-a">
                         <div class="home-page-a02-img">
-                            <img width="45px" class="mx-auto d-block" src="../../assets/img/banner-20.png" alt="">
+                            <img width="45px" class="mx-auto d-block" src="../assets/img/banner-20.png" alt="">
                         </div>
                         <div class="home-page-a02-text">Hàng Quốc Tế</div>
                     </div>
