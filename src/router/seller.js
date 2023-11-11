@@ -1,14 +1,14 @@
 const seller = [
     {
-        path: "/portal",
+        path: "/",
         name: "seller-index",
         component: () => import("../layouts/seller.vue"),
         children:[
             {
                 path: "",
-                name: "home",
+                name: "",
                 component: () => import("../pages/seller/home/index.vue"),
-            },
+            }
         ]
     },
 ]
