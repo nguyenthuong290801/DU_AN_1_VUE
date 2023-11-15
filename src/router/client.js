@@ -8,7 +8,12 @@ const client = [
                 path: "",
                 name: "",
                 component: () => import("../pages/client/home/index.vue"),
-            }
+            },
+            {
+                path: "product/detail", // Đường dẫn mới
+                name: "", // Tên mới
+                component: () => import("../pages/client/product_detail/index.vue"), // Thay đổi đường dẫn đến component mới
+            },
         ]
     },
 ]

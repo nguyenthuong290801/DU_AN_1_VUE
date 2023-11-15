@@ -1116,31 +1116,31 @@
         <div class="d-flex col-8 p-0 footer-a001">
           <div class="footer-a001text">Quốc gia & Khu vực:</div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Singapore</a>
+            <a href="#" class="nav-item-pipe2 px-2">Singapore</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Indonesia</a>
+            <a href="#" class="nav-item-pipe2 px-2">Indonesia</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Đài Loan</a>
+            <a href="#" class="nav-item-pipe2 px-2">Đài Loan</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Thái Lan</a>
+            <a href="#" class="nav-item-pipe2 px-2">Thái Lan</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Việt Nam</a>
+            <a href="#" class="nav-item-pipe2 px-2">Việt Nam</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Philippines</a>
+            <a href="#" class="nav-item-pipe2 px-2">Philippines</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">México</a>
+            <a href="#" class="nav-item-pipe2 px-2">México</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Colombia</a>
+            <a href="#" class="nav-item-pipe2 px-2">Colombia</a>
           </div>
           <div class="footer-a001text nav-header-item">
-            <a href="#" class="nav-item-pipe px-2">Chile</a>
+            <a href="#" class="nav-item-pipe2 px-2">Chile</a>
           </div>
         </div>
       </div>
@@ -1340,7 +1340,7 @@
   text-decoration: none;
   color: rgba(0,0,0,.65);
 }
-.nav-item-pipe{
+.nav-item-pipe2{
   border-right: 1px solid #ccc;
   color: #00000080;
 }
