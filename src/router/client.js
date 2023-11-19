@@ -12,7 +12,7 @@ const client = [
             {
                 path: "product/detail", // Đường dẫn mới
                 name: "", // Tên mới
-                component: () => import("../pages/client/product_detail/index.vue"), // Thay đổi đường dẫn đến component mới
+                component: () => import("../pages/client/product_detail/index.vue"),
             },
         ]
     },

@@ -86,7 +86,6 @@
             <a href="#!cart">
               <i class="header-cart-icon bi bi-cart2"></i>
               <div class="header-cart-amount-a">
-                <!-- <span class="header-cart-amount-item">{{cart.length}}</span> -->
               </div>
             </a>
           </div>
