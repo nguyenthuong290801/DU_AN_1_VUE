@@ -5,9 +5,16 @@ const cartpay = [
         component: () => import("../layouts/cartpay.vue"),
         children:[
             {
-                path: "cart", // Đường dẫn mới
-                name: "", // Tên mới
+                path: "cart",
+                name: "cart",
                 component: () => import("../pages/client/cart/index.vue"),
+                meta: { pageTitle: "Giỏ Hàng" },
+            },
+            {
+                path: "pay",
+                name: "pay",
+                component: () => import("../pages/client/pay/index.vue"),
+                meta: { pageTitle: "Thanh Toán" },
             },
         ]
     },

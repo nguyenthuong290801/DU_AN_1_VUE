@@ -31,7 +31,16 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item nav-header-item">
-              <a href="" class="nav-link"><i class="bi bi-bell px-1"></i>Thông báo</a>
+              <a href="" class="nav-link">
+                <i class="bi bi-bell px-1">
+                  <span
+                    class="position-absolute top-50 start-0 translate-middle badge  bg-white"
+                    style="color: #cd3011">
+                    5+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </i>Thông báo
+              </a>
             </li>
             <li class="nav-item nav-header-item">
               <a href="" class="nav-link"><i class="bi bi-question-circle px-1"></i>Hỗ trợ</a>

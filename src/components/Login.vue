@@ -35,7 +35,7 @@
                @click="togglePasswordVisibility"
           />
 
-          <input type="button" value="ĐĂNG NHẬP">
+          <input class="fw-semibold" type="button" value="ĐĂNG NHẬP">
           <div class="forget">
             <a class="forgetPassword" href="">Quên mật khẩu</a>
             <a class="SMS" href="">Đăng nhập với SMS</a>
@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import closedEyeImage from '@/assets/img/closed-eye.png';
+import closedEyeImage from '@/assets/img/eyebrow.png';
 import eyeImage from '@/assets/img/eye.png';
 
 export default {

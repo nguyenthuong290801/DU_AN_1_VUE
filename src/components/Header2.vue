@@ -64,15 +64,15 @@
             </svg>
           </a>
           <div class="cart-page-logo__page-name ">
-            Giỏ hàng
+            {{ pageTitle }}
           </div>
         </div>
-        <div class="header-search ms-5">
+        <div class="header-search ms-5" v-if="!isCheckoutPage">
           <div class="d-flex align-items-center justify-content-center header-search-a" style="">
             <input class="header-search-input" style=""
                    ng-model="search" type="text" placeholder="Quốc tế giảm đến 50%">
             <button type="button" class="col-1 header-search-btn" ng-click="searchSP()"
-                    data-toggle="modal" data-target="#exampleModal" style="width: 70px">
+                    data-toggle="modal" data-target="#exampleModal" style="width: 70px" @click="searchSP()">
               <i class="bi bi-search text-white fs-6"></i>
             </button>
           </div>
@@ -83,7 +83,22 @@
 </template>
 
 <script>
+export default {
+  computed: {
+    pageTitle() {
+      return this.$route.meta.pageTitle || 'Trang chủ';
+    },
+    isCheckoutPage() {
 
+      return this.$route.name === 'pay';
+    },
+  },
+  methods: {
+    searchSP() {
+      // Xử lý logic tìm kiếm sản phẩm
+    },
+  },
+};
 </script>
 
 <style lang="css" scoped>

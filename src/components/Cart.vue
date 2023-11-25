@@ -365,11 +365,6 @@ input {
   box-sizing: border-box;
   padding: 10px 44px;
 }
-.icon-store,
-.dressing-up {
-  display: flex;
-  align-items: center;
-}
 
 .wholepleake {
   display: flex;

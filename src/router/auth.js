@@ -6,13 +6,15 @@ const auth = [
         children:[
             {
                 path: "login",
-                name: "",
+                name: "login",
                 component: () => import("../pages/auth/login/index.vue"),
+                meta: { pageTitle: "Đăng nhập" },
             },
             {
                 path: "register",
-                name: "",
+                name: "register",
                 component: () => import("../pages/auth/register/index.vue"),
+                meta: { pageTitle: "Đăng ký" },
             }
         ]
     },

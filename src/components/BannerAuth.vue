@@ -11,7 +11,7 @@
             </g>
           </svg>
         </a>
-        <div class="mx-3 mt-2">Đăng nhập</div>
+        <div class="mx-3 mt-2">{{ pageTitle }}</div>
       </div>
     </div>
     <div class="header-right"><a class="fw-semibold" href="https://help.shopee.vn/vn/s/">Bạn cần giúp đỡ?</a>
@@ -20,7 +20,13 @@
 </template>
 
 <script>
-
+export default {
+  computed: {
+    pageTitle() {
+      return this.$route.meta.pageTitle || 'Trang chủ';
+    },
+  },
+};
 </script>
 
 <style scoped>

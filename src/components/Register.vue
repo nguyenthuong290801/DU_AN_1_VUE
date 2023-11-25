@@ -7,7 +7,7 @@
         </div>
         <form class="box" action="">
           <input class="email" type="text" placeholder="Số điện thoại">
-          <input type="button" value="TIẾP THEO">
+          <input class="fw-semibold" type="button" value="TIẾP THEO">
         </form>
         <div class="d-flex">
           <div class="line1"></div>
