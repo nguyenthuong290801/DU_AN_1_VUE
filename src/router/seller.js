@@ -9,6 +9,11 @@ const seller = [
                 name: "home",
                 component: () => import("../pages/seller/home/index.vue"),
             },
+            {
+                path: "product/new",
+                name: "product-new",
+                component: () => import("../pages/seller/product_new/index.vue"),
+            },
         ]
     },
 ]

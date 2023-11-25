@@ -6,7 +6,7 @@ const client = [
         children:[
             {
                 path: "",
-                name: "",
+                name: "client-home",
                 component: () => import("../pages/client/home/index.vue"),
             },
             {

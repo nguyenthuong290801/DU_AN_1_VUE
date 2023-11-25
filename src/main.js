@@ -13,9 +13,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import VueSplide from '@splidejs/vue-splide';
 import '@splidejs/vue-splide/css';
+import 'bootstrap';
 
 const app = createApp(App)
 app.use(router)
+app.use( VueSplide)
 app.mount('#app')
-app.use( VueSplide );
-

@@ -6,7 +6,7 @@ const admin = [
         children:[
             {
                 path: "",
-                name: "",
+                name: "home",
                 component: () => import("../pages/admin/home/index.vue"),
             }
         ]

@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import HeaderSeller from "@/components/HeaderSeller.vue";
-import SideBarSeller from "@/components/SideBarSeller.vue";
+import HeaderSeller from "@/components/seller/HeaderSeller.vue";
+import SideBarSeller from "@/components/seller/SideBarSeller.vue";
 
 export default {
   components: {
@@ -25,12 +25,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+body {
+  background: #efefef;
+}
+
 .main {
   padding-top: 55px;
   margin-left: 250px;
   height: 100vh;
-  background: #efefef;
+
   overflow: hidden;
 }
 </style>
