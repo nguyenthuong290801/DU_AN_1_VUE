@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Illuminate\framework;
 
@@ -17,9 +17,10 @@ class Database
         $this->pdo = new \PDO($dsn, $user, $password);
         $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
     }
-    
 
-    public function execute($query, $param = null) {
+
+    public function execute($query, $param = null)
+    {
         try {
             $stmt = $this->pdo->prepare($query);
             $stmt->execute($param);
@@ -33,5 +34,4 @@ class Database
     {
         return $this->pdo->lastInsertId();
     }
-
 }

@@ -5,6 +5,9 @@ use Illuminate\framework\Application;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__ . '/artisan'));
+$dotenv->load();
+
 class Artisan extends ArtisanTool
 {
     public function make()
@@ -41,9 +44,9 @@ class Artisan extends ArtisanTool
 
                 $config = [
                     'db' => [
-                        'dsn' => 'mysql:host=localhost;port=3306;dbname=tutor3',
-                        'user' => 'root',
-                        'password' => '123',
+                        'dsn' => $_ENV['DB_CONNECTION'] . ";port=" . $_ENV['DB_PORT'] . ";dbname=" . $_ENV['DB_DATABASE'],
+                        'user' => $_ENV['DB_USERNAME'],
+                        'password' => $_ENV['DB_PASSWORD'],
                     ]
                 ];
 
@@ -137,8 +140,8 @@ class $name extends MigrationTool
 
     private function getCreateFormContent($name, $table)
     {
-        return 
-    'public function up()
+        return
+            'public function up()
     {
         $this->schema->create(\'' . $table . '\', function (Blueprint $table) {
             $table->id();
@@ -154,8 +157,8 @@ class $name extends MigrationTool
 
     private function getUpdateFormContent($name, $table)
     {
-        return 
-    'public function up()
+        return
+            'public function up()
     {
         $this->schema->update(\'' . $table . '\', function (Blueprint $table) {
             $table->id();
