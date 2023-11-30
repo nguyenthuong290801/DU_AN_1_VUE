@@ -1,0 +1,345 @@
+<template>
+  <div class="content">
+    <div class="wrapper">
+      <div class="form-control">
+        <div class="d-flex">
+          <p class="login">Đăng nhập</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="QR">
+              Đăng nhập với mã QR
+            </div>
+            <a class="">
+              <svg width="40" height="40" fill="none">
+                <g clip-path="">
+                  <path fill-rule="evenodd" clip-rule="evenodd" fill="#ee4d2d"
+                    d="M18 0H0v18h18V0zM3 15V3h12v12H3zM18 22H0v18h18V22zm-3 15H3V25h12v12zM40 0H22v18h18V0zm-3 15H25V3h12v12z">
+                  </path>
+                  <path d="M37 37H22.5v3H40V22.5h-3V37z" fill="#ee4d2d"></path>
+                  <path d="M27.5 32v-8h-3v8h3zM33.5 32v-8h-3v8h3zM6 6h6v6H6zM6 28h6v6H6zM28 6h6v6h-6z" fill="#ee4d2d">
+                  </path>
+                  <path d="M-4.3 4l44 43.9-22.8 22.7-43.9-44z" fill="#fff"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="box" action="">
+          <input class="email1" type="email" placeholder="Email/Số điện thoại/Tên đăng nhập">
+          <input class="password" id="password" :type="showPassword ? 'text' : 'password'" v-model="password"
+            placeholder="Mật khẩu" />
+          <img class="eye" :src="showPassword ? eyeImage : closedEyeImage" alt="Password Toggle"
+            @click="togglePasswordVisibility" />
+
+          <input class="fw-semibold" type="button" value="ĐĂNG NHẬP">
+          <div class="forget">
+            <a class="forgetPassword" href="">Quên mật khẩu</a>
+            <a class="SMS" href="">Đăng nhập với SMS</a>
+          </div>
+        </form>
+        <div class="break">
+          <div class="line1"></div>
+          <div class="text">HOẶC</div>
+          <div class="line2"></div>
+        </div>
+        <facebook-login class="button" appId="892320442525340" @login="getUserData" @logout="onLogout"
+          @get-initial-status="getUserData">
+        </facebook-login>
+        <div class="icon">
+          <div class="icon">
+            <button type="includeFb" class="bg-white m-2">Facebook</button>
+            <button type="includeGg" class="bg-white m-2">Google</button>
+          </div>
+        </div>
+        <div class="footer">Bạn mới biết đến Shopee?
+          <a href="">Đăng ký</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import closedEyeImage from '@/assets/img/eyebrow.png';
+import eyeImage from '@/assets/img/eye.png';
+import facebookLogin from 'facebook-login-vuejs';
+
+export default {
+  components: {
+    facebookLogin
+  },
+  data() {
+    return {
+      password: '',
+      showPassword: false,
+      closedEyeImage,
+      eyeImage,
+      idImage,
+      loginImage,
+      mailImage,
+      faceImage,
+      isConnected: false,
+      name: '',
+      email: '',
+      personalID: '',
+      FB: undefined
+    };
+  },
+  methods: {
+    togglePasswordVisibility() {
+      this.showPassword = !this.showPassword;
+    },
+    getUserData() {
+      this.FB.api('/me', 'GET', { fields: 'id,name,email' },
+        userInformation => {
+          console.warn("data api", userInformation)
+          this.personalID = userInformation.id;
+          this.email = userInformation.email;
+          this.name = userInformation.name;
+        }
+      )
+    },
+    sdkLoaded(payload) {
+      this.isConnected = payload.isConnected
+      this.FB = payload.FB
+      if (this.isConnected) this.getUserData()
+    },
+    onLogin() {
+      this.isConnected = true
+      this.getUserData()
+    },
+    onLogout() {
+      this.isConnected = false;
+    }
+  }
+};
+</script>
+
+<style scoped>
+.header-right a {
+  color: #ee4d2d;
+  font-size: 14px;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.content {
+  background-color: rgb(238, 77, 45);
+  height: 600px;
+  position: relative;
+}
+
+.wrapper {
+  background-image: url('../assets/img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 1040px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.form-control {
+  width: 397px;
+  min-height: 492px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
+  border-radius: .25rem;
+}
+
+.box {
+  text-align: center;
+}
+
+.login {
+  font-size: 20px;
+  color: #222;
+  padding: 22px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.QR {
+  padding: 10px 18px;
+  margin: 10px 0;
+  color: #ffbf00;
+  font-size: .875rem;
+  font-weight: 700;
+  border: 2px solid #ffbf00;
+  border-radius: 2px;
+  position: relative;
+  margin-right: .6rem;
+}
+
+.QR:after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  width: 0.75rem;
+  height: 0.75rem;
+  transform: rotate(45deg) translateX(-50%);
+  border-top: 2px solid #ffbf00;
+  border-right: 2px solid #ffbf00;
+  top: 50%;
+  background: #fefaec;
+  right: -0.75rem;
+}
+
+input[type=email] {
+  width: 335px;
+  height: 40.8px;
+  border: 1px solid rgba(0, 0, 0, .14);
+  border-radius: 2px;
+  box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.eye {
+  width: 22px;
+  position: absolute;
+  right: 18.4%;
+  top: 39%;
+  z-index: 10000;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+
+.password {
+  float: right;
+  width: 335px;
+  height: 40.8px;
+  border: 1px solid rgba(0, 0, 0, .14);
+  border-radius: 2px;
+  box-shadow: inset 0 2px 0 rgb(0 0 0 / 2%);
+  padding: 12px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+  border: 1px solid #cccccc;
+}
+
+input[type=button] {
+  width: 335px;
+  height: 40.8px;
+  /* border: 1px solid rgba(0,0,0,.14); */
+  border-radius: 2px;
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: #EE4D2D;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 31px;
+  margin-right: 31px;
+}
+
+.forgetPassword,
+.SMS {
+  text-decoration: none;
+  color: #0055aa;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.break {
+  display: flex;
+}
+
+.line1 {
+  color: #dbdbdb;
+  border-bottom: 1px solid #dbdbdd;
+  height: 1px;
+  width: 100%;
+  margin-top: 8px;
+  margin-left: 31px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+
+.line2 {
+  color: #dbdbdb;
+  /* line-height: 1.2; */
+  border-bottom: 1px solid #dbdbdd;
+  width: 100%;
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 31px;
+  margin-bottom: 30px;
+}
+
+.text {
+  color: #ccc;
+  font-size: 12px;
+}
+
+
+.icon {
+  display: flex;
+  margin-left: 31px;
+  margin-right: 31px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button[type=includeFb] {
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background-image: url('../assets/img/Facebook_Logo_(2019).png.webp');
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+  font-size: 14px;
+  padding-left: 35px;
+}
+
+button[type=includeGg] {
+  width: 150px;
+  height: 40px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background-image: url('../assets/img/google.png');
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+  padding-left: 35px;
+}
+
+.footer {
+  color: #00000042;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer a {
+  color: #EE4D2D;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #EE4D2D;
+}
+</style>
