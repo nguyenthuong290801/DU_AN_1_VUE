@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'f3c2f9d78c1bb45e270f00fa2474d69ddab7db3b',
+        'reference' => '952cf6f89e8ee6391111077abf83d7d3ffd68d74',
         'name' => 'shoppe/e-commerce',
         'dev' => true,
     ),
@@ -116,6 +116,15 @@
             'install_path' => __DIR__ . '/../infobip/infobip-api-php-client',
             'aliases' => array(),
             'reference' => '171a5e00765c6c28ea64c50c0b004680978ae3bc',
+            'dev_requirement' => false,
+        ),
+        'php-ai/php-ml' => array(
+            'pretty_version' => '0.10.0',
+            'version' => '0.10.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-ai/php-ml',
+            'aliases' => array(),
+            'reference' => '543f11158c57bf64ef8ddecd5bab51d396d39f50',
             'dev_requirement' => false,
         ),
         'phpdocumentor/reflection-common' => array(
@@ -334,7 +343,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'f3c2f9d78c1bb45e270f00fa2474d69ddab7db3b',
+            'reference' => '952cf6f89e8ee6391111077abf83d7d3ffd68d74',
             'dev_requirement' => false,
         ),
         'symfony/cache' => array(

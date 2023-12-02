@@ -2774,3 +2774,407 @@ ______
 [2023-11-30 14:49:46] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
 ______
 [2023-11-30 14:49:46] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-11-30 15:09:39] Error: Undefined variable $productDetail in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 85
+______
+[2023-11-30 15:09:39] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 86
+______
+[2023-11-30 16:48:18] Error: Undefined variable $productDetail in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 85
+______
+[2023-11-30 16:48:18] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 86
+______
+[2023-11-30 17:28:35] Error: Undefined variable $productDetail in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 85
+______
+[2023-11-30 17:28:35] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 86
+______
+[2023-11-30 17:28:40] Error: Undefined variable $products in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 117
+______
+[2023-11-30 17:28:40] Error: foreach() argument must be of type array|object, null given in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 117
+______
+[2023-11-30 17:28:40] Error: Undefined variable $products in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 124
+______
+[2023-11-30 17:28:40] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 126
+______
+[2023-11-30 17:28:41] Error: Undefined variable $productDetail in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 85
+______
+[2023-11-30 17:28:41] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 86
+______
+[2023-11-30 17:49:28] Error: copy(D:\du_an_1\DU_AN_1_VUE\serve\public/store/upload/image_6568bd189886a.png): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 167
+______
+[2023-11-30 17:52:58] Error: Undefined variable $products in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 117
+______
+[2023-11-30 17:52:58] Error: foreach() argument must be of type array|object, null given in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 117
+______
+[2023-11-30 17:52:58] Error: Undefined variable $products in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 124
+______
+[2023-11-30 17:52:58] Error: Undefined variable $productCategory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 126
+______
+[2023-11-30 18:05:49] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:05:49] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:07:14] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:07:14] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:08:49] Error: iconv(): Detected an illegal character in input string in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\base\Model.php on line 190
+______
+[2023-11-30 18:08:49] Error: copy(D:\du_an_1\DU_AN_1_VUE\serve\public/store/upload/image_6568c1a1b4b5f.png): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 167
+______
+[2023-11-30 18:08:49] Error: Undefined array key "image" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:08:49] Error: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:08:59] Error: iconv(): Detected an illegal character in input string in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\base\Model.php on line 190
+______
+[2023-11-30 18:08:59] Error: copy(D:\du_an_1\DU_AN_1_VUE\serve\public/store/upload/image_6568c1ab7691c.png): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 167
+______
+[2023-11-30 18:08:59] Error: Undefined array key "image" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:08:59] Error: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:09:04] Error: iconv(): Detected an illegal character in input string in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\base\Model.php on line 190
+______
+[2023-11-30 18:09:04] Error: copy(D:\du_an_1\DU_AN_1_VUE\serve\public/store/upload/image_6568c1b08f6b4.png): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 167
+______
+[2023-11-30 18:09:04] Error: Undefined array key "image" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:09:04] Error: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 191
+______
+[2023-11-30 18:14:45] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:14:45] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:15:08] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:15:08] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:15:28] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:15:28] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 74
+______
+[2023-11-30 18:18:11] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:18:11] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 75
+______
+[2023-11-30 18:18:36] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:18:36] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:18:52] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:18:52] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:19:30] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:19:30] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\seller\ApiController.php on line 77
+______
+[2023-11-30 18:59:15] Error: Undefined variable $data in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 19
+______
+[2023-11-30 23:35:20] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-11-30 23:35:20] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-11-30 23:50:48] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-11-30 23:50:48] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-11-30 23:50:48] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-11-30 23:50:48] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-11-30 23:57:53] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-11-30 23:57:53] Error: Trying to access array offset on value of type int in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:13:48] Error: Undefined array key "id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:13:48] Error: Undefined array key "id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:13:48] Error: Undefined array key "id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:13:48] Error: Undefined array key "id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Undefined array key 1 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Undefined array key 1 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Undefined array key 1 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Undefined array key 1 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:14:20] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 45
+______
+[2023-12-01 00:15:31] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:31] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:31] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:31] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:31] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:31] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:31] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:31] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:31] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:31] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:31] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:31] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:31] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:31] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:31] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:31] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:33] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:33] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:33] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:33] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:33] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:33] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:33] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:33] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:33] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:33] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:33] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:33] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 00:15:33] Error: Undefined array key "name" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 48
+______
+[2023-12-01 00:15:33] Error: Undefined array key "slug" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 49
+______
+[2023-12-01 00:15:33] Error: Undefined array key "description" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 50
+______
+[2023-12-01 00:15:33] Error: Undefined array key "product_category_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 51
+______
+[2023-12-01 01:24:03] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:24:03] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:27:13] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:27:13] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:32:47] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:32:47] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:37] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:34:51] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:16] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Undefined array key 0 in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:35:26] Error: Trying to access array offset on value of type null in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 111
+______
+[2023-12-01 01:40:45] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:45] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:46] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:46] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:47] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:47] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:47] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:47] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:48] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:48] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:50] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:50] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:51] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:51] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:52] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:40:52] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:41:10] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:41:10] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:41:10] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:41:10] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-01 01:46:53] Error: Undefined array key "variation_opttion_id" in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 109
+______
+[2023-12-02 18:54:29] Error: Undefined array key "PATH_INFO" in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 103
+______
+[2023-12-02 18:54:29] Error: explode(): Passing null to parameter #2 ($string) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 104
+______
+[2023-12-02 18:54:29] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 18:54:29] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:08:54] Error: Undefined array key "PATH_INFO" in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 103
+______
+[2023-12-02 19:08:54] Error: explode(): Passing null to parameter #2 ($string) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 104
+______
+[2023-12-02 19:08:54] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:08:54] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197

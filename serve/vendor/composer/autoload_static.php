@@ -72,6 +72,7 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
             'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'Phpml\\' => 6,
             'PhpOption\\' => 10,
             'PHPStan\\PhpDocParser\\' => 21,
             'PHPMailer\\PHPMailer\\' => 20,
@@ -249,6 +250,10 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Phpml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-ai/php-ml/src',
         ),
         'PhpOption\\' => 
         array (

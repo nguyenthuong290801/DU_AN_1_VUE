@@ -26,6 +26,7 @@
         "cboden/ratchet": "^0.4.4",
         "twilio/sdk": "^7.12",
         "infobip/infobip-api-php-client": "^5.1",
-        "facebook/graph-sdk": "^5.1"
+        "facebook/graph-sdk": "^5.1",
+        "php-ai/php-ml": "^0.10.0"
     }
 }
