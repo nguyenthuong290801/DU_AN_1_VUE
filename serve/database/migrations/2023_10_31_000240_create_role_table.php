@@ -19,6 +19,8 @@ class Role implements Migration
             $table->string('name');
             $table->text('description');
             $table->json('permission');
+            $table->timestamps();
+            $table->softDeletes();
             $table->foreignId('user_id', 'site_user');
         });
     }
@@ -30,5 +32,4 @@ class Role implements Migration
     {
         Schema::dropIfExists('role');
     }
-
 }

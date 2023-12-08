@@ -481,5 +481,6 @@ img {
 .sticky-button {
   position: sticky;
   bottom: 0;
+  box-shadow: 0px -5px 5px rgba(231, 231, 231, 0.4);
 }
 </style>

@@ -74,8 +74,13 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
             'Psr\\Cache\\' => 10,
             'Phpml\\' => 6,
             'PhpOption\\' => 10,
+            'ParagonIE\\ConstantTime\\' => 23,
             'PHPStan\\PhpDocParser\\' => 21,
             'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'O' => 
+        array (
+            'OTPHP\\' => 6,
         ),
         'I' => 
         array (
@@ -104,6 +109,7 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Defuse\\Crypto\\' => 14,
         ),
         'A' => 
         array (
@@ -259,6 +265,10 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
         'PHPStan\\PhpDocParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
@@ -266,6 +276,10 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'OTPHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spomky-labs/otphp/src',
         ),
         'Infobip\\' => 
         array (
@@ -318,6 +332,10 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Defuse\\Crypto\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/defuse/php-encryption/src',
         ),
         'App\\' => 
         array (

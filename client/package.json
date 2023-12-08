@@ -19,9 +19,14 @@
     "transliteration": "^2.3.5",
     "vue": "^3.3.8",
     "vue-chartjs": "^5.2.0",
+    "vue-facebook-signin-button": "^1.0.1",
+    "vue-jwt-decode": "^0.1.0",
     "vue-native-websocket": "^2.0.15",
     "vue-router": "^4.2.5",
-    "vuex": "^4.1.0"
+
+    "vuex": "^4.1.0",
+    "vue-social-auth": "^1.4.9",
+    "vue3-google-oauth2": "^1.0.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",

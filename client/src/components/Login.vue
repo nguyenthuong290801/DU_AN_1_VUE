@@ -1,4 +1,5 @@
 <template>
+  <Loading :clickLoading="loading"></Loading>
   <div class="content">
     <div class="wrapper">
       <div class="form-control">
@@ -23,17 +24,24 @@
             </a>
           </div>
         </div>
+        <div class="d-flex flex-column px-3 mb-2">
+          <small v-if="errorPhone" class="text-danger">Số điện thoại không hợp lệ!</small>
+          <small v-if="errorPhoneR" class="text-danger">Không được để trống!</small>
+          <small v-if="errorPhoneP" class="text-danger">Mật khẩu chưa đúng định dạng!</small>
+        </div>
         <form class="box" action="">
-          <input class="email1" type="email" placeholder="Email/Số điện thoại/Tên đăng nhập">
-          <input class="password" id="password" :type="showPassword ? 'text' : 'password'" v-model="password"
-            placeholder="Mật khẩu" />
-          <img class="eye" :src="showPassword ? eyeImage : closedEyeImage" alt="Password Toggle"
-            @click="togglePasswordVisibility" />
+          <input @input="handleValidate" class="email1" type="text" placeholder="Số điện thoại" v-model="phone_number">
+          <div class="password-main">
+            <input @input="validatePassword" class="password" id="password" :type="showPassword ? 'text' : 'password'"
+              v-model="password" placeholder="Mật khẩu" />
+            <img class="eye" :src="showPassword ? eyeImage : closedEyeImage" alt="Password Toggle"
+              @click="togglePasswordVisibility" />
+          </div>
 
-          <input class="fw-semibold" type="button" value="ĐĂNG NHẬP">
+          <input @click="submitForm" class="fw-semibold" type="button" value="ĐĂNG NHẬP">
           <div class="forget">
-            <a class="forgetPassword" href="">Quên mật khẩu</a>
-            <a class="SMS" href="">Đăng nhập với SMS</a>
+            <router-link class="forgetPassword" to="/buyer/forgot-password">Quên mật khẩu</router-link>
+            <router-link class="SMS" to="/buyer/login-phone">Đăng nhập với SMS</router-link>
           </div>
         </form>
         <div class="break">
@@ -41,17 +49,14 @@
           <div class="text">HOẶC</div>
           <div class="line2"></div>
         </div>
-        <facebook-login class="button" appId="892320442525340" @login="getUserData" @logout="onLogout"
-          @get-initial-status="getUserData">
-        </facebook-login>
         <div class="icon">
           <div class="icon">
-            <button type="includeFb" class="bg-white m-2">Facebook</button>
-            <button type="includeGg" class="bg-white m-2">Google</button>
+            <button type="includeFb" class="bg-white m-2" @click="login">Facebook</button>
+            <button type="includeGg" class="bg-white m-2" @click="loginWithGoogle">Google</button>
           </div>
         </div>
         <div class="footer">Bạn mới biết đến Shopee?
-          <a href="">Đăng ký</a>
+          <router-link to="/buyer/register">Đăng ký</router-link>
         </div>
       </div>
     </div>
@@ -61,56 +66,144 @@
 <script>
 import closedEyeImage from '@/assets/img/eyebrow.png';
 import eyeImage from '@/assets/img/eye.png';
-import facebookLogin from 'facebook-login-vuejs';
+import axios from 'axios';
+import Loading from '@/components/Loading.vue';
 
 export default {
   components: {
-    facebookLogin
+    Loading
   },
   data() {
     return {
       password: '',
+      phone_number: null,
       showPassword: false,
       closedEyeImage,
       eyeImage,
-      idImage,
-      loginImage,
-      mailImage,
-      faceImage,
-      isConnected: false,
-      name: '',
-      email: '',
-      personalID: '',
-      FB: undefined
+      loggedInUser: null,
+      userFacebook: null,
+      loading: false,
+      errorPhone: false,
+      errorPhoneR: false,
+      errorPhoneP: false,
     };
   },
+  watch: {
+    userFacebook(newU, oldU) {
+      this.createUserFace(this.userFacebook);
+    }
+  },
   methods: {
+    async login() {
+      try {
+        const { status } = await new Promise(FB.getLoginStatus);
+        if (status === 'connected') {
+          console.log(status);
+        } else {
+          const { authResponse } = await new Promise(FB.login);
+          const userID = authResponse.userID
+          const accessToken = authResponse.accessToken
+
+          const apiEndpoint = `https://graph.facebook.com/v13.0/${userID}?fields=id,name,email,gender,picture&access_token=${accessToken}`;
+
+          fetch(apiEndpoint)
+            .then(response => response.json())
+            .then(userData => {
+              const data = {
+                'user_facebook_id': userData.id,
+                'user_facebook_name': userData.name,
+              }
+              this.userFacebook = data
+            })
+            .catch(error => {
+              console.error('Lỗi khi lấy thông tin người dùng:', error);
+            });
+
+          if (!authResponse) {
+            this.$router.push({
+              path: `/`
+            });
+          }
+        }
+
+      } catch (error) {
+        console.log(error);
+      }
+    },
     togglePasswordVisibility() {
       this.showPassword = !this.showPassword;
     },
-    getUserData() {
-      this.FB.api('/me', 'GET', { fields: 'id,name,email' },
-        userInformation => {
-          console.warn("data api", userInformation)
-          this.personalID = userInformation.id;
-          this.email = userInformation.email;
-          this.name = userInformation.name;
-        }
-      )
+    createUserFace(data) {
+      axios.post(`/api/user-facebook/new`, data)
+        .then(response => {
+          console.log(response.data)
+          this.$router.push('/')
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
     },
-    sdkLoaded(payload) {
-      this.isConnected = payload.isConnected
-      this.FB = payload.FB
-      if (this.isConnected) this.getUserData()
+    initFacebookSDK() {
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '191618287357589',
+          cookie: true,
+          xfbml: true,
+          version: 'v10.0'
+        });
+      };
     },
-    onLogin() {
-      this.isConnected = true
-      this.getUserData()
+    submitForm() {
+
+      if (this.phone_number == null ||
+        this.phone_number == '' ||
+        this.password == null ||
+        this.password == ''
+      ) {
+        this.errorPhoneR = true;
+      }
+
+      const data = {
+        'phone_number': this.phone_number,
+        'password': this.password,
+      }
+
+      axios.post(`/api/auth/sms/login`, data)
+        .then(response => {
+          console.log(response.data)
+          this.$router.push('/')
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
     },
-    onLogout() {
-      this.isConnected = false;
+    showLoading() {
+      return new Promise((resolve, reject) => {
+        this.loading = true;
+        setTimeout(() => {
+          this.loading = false;
+          resolve();
+        }, 2000);
+      });
+    },
+    handleValidate() {
+      const phoneRegex = /^[0-9]{10}$/;
+
+      if (phoneRegex.test(this.phone_number)) {
+        this.errorPhone = false;
+      } else {
+        this.errorPhone = true;
+      }
+    },
+    validatePassword() {
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      if (passwordRegex.test(this.password)) {
+        this.errorPhoneP = false;
+      } else {
+        this.errorPhoneP = true;
+      }
     }
-  }
+  },
 };
 </script>
 
@@ -143,7 +236,7 @@ export default {
 
 .form-control {
   width: 397px;
-  min-height: 492px;
+  min-height: 550px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
@@ -188,7 +281,7 @@ export default {
   right: -0.75rem;
 }
 
-input[type=email] {
+input[type=text] {
   width: 335px;
   height: 40.8px;
   border: 1px solid rgba(0, 0, 0, .14);
@@ -202,13 +295,17 @@ input[type=email] {
 .eye {
   width: 22px;
   position: absolute;
-  right: 18.4%;
-  top: 39%;
+  right: 8%;
+  bottom: 0%;
+  top: 10px;
   z-index: 10000;
   cursor: pointer;
   filter: grayscale(100%);
 }
 
+.password-main {
+  position: relative;
+}
 
 .password {
   float: right;
@@ -224,7 +321,7 @@ input[type=email] {
   cursor: pointer;
 }
 
-input[type=email]:focus,
+input[type=text]:focus,
 input[type=password]:focus {
   border: 1px solid #cccccc;
 }
@@ -305,7 +402,7 @@ button[type=includeFb] {
   height: 40px;
   border-radius: 2px;
   border: 1px solid #ccc;
-  background-image: url('../assets/img/Facebook_Logo_(2019).png.webp');
+  background-image: url('../assets/img/Facebook_Logo.webp');
   background-size: 22px 22px;
   background-repeat: no-repeat;
   background-position: 9px 9px;

@@ -58,10 +58,10 @@
             </li>
 
             <li class="nav-item nav-header-item">
-              <a href="" class="nav-link nav-item-pipe">Đăng ký</a>
+              <router-link class="nav-link nav-item-pipe" to="/buyer/register">Đăng ký</router-link>
             </li>
             <li class="nav-item nav-header-item">
-              <a href="" class="nav-link">Đăng nhập</a>
+              <router-link class="nav-link" to="/buyer/login">Đăng nhập</router-link>
             </li>
           </ul>
         </div>

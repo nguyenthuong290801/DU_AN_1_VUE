@@ -1,14 +1,16 @@
 <template>
   <div class="content">
     <div class="wrapper">
-      <div class="form-control">
+      <div v-if="showRegsiter && !showFormCreate" class="form-control">
         <div class="d-flex">
-          <p class="login">Đăng ký</p>
+          <p class="login m-0">Đăng ký</p>
         </div>
-        <form class="box" action="">
-          <input class="email" type="text" placeholder="Số điện thoại">
-          <input class="fw-semibold" type="button" value="TIẾP THEO">
-        </form>
+        <small v-if="errorPhone" class="text-danger">Số điện thoại không hợp lệ!</small>
+        <small v-if="errorPhoneR" class="text-danger">Không được để trống!</small>
+        <div class="box">
+          <input @input="handleValidate" class="email" type="text" placeholder="Số điện thoại" v-model="numberPhone">
+          <button @click="handlePhone" class="fw-semibold" type="button" :disabled="errorPhone">TIẾP THEO</button>
+        </div>
         <div class="d-flex">
           <div class="line1"></div>
           <div class="text">HOẶC</div>
@@ -16,7 +18,7 @@
         </div>
         <div class="icon">
           <div class="icon">
-            <button type="includeFb" class="bg-white m-2">Facebook</button>
+            <button type="includeFb" class="bg-white m-2" @click="login">Facebook</button>
             <button type="includeGg" class="bg-white m-2">Google</button>
           </div>
         </div>
@@ -30,11 +32,47 @@
           <a style="font-size: 13px;color: #ee4d2d;
                     cursor: pointer;
                     user-select: none;
-                    text-decoration: none;"
-          >Chính sách bảo mật</a>
+                    text-decoration: none;">Chính sách bảo mật</a>
         </div>
         <div class="footer">Bạn đã có tài khoản?
-          <a href="">Đăng nhập</a>
+          <router-link to="/buyer/login">Đăng nhập</router-link>
+        </div>
+      </div>
+      <div v-if="showOPT && !showFormCreate" class="form-control">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="login m-0">Đăng ký</p>
+          <p @click="goBack" class="rehome text-decoration-none">Quay lại</p>
+        </div>
+        <small v-if="errorOTP" class="text-danger">Mã OPT không hợp lệ!</small>
+        <div class="box">
+          <input class="email" type="text" placeholder="OTP" v-model="OTP">
+          <button @click="handleOTP" class="fw-semibold" type="button">
+            TIẾP THEO
+          </button>
+          <button @click="handlePhone" class="fw-semibold" type="button" :disabled="resendTimeout > 0">
+            GỬI LẠI
+            <span v-if="resendTimeout > 0"> ({{ resendTimeout }}s)</span>
+          </button>
+        </div>
+        <div class="footer">Bạn đã có tài khoản?
+          <router-link to="/buyer/login">Đăng nhập</router-link>
+        </div>
+      </div>
+      <div v-if="showFormCreate" class="form-control">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="login m-0">Đăng ký</p>
+          <p @click="goBack" class="rehome text-decoration-none">Quay lại</p>
+        </div>
+        <small v-if="errorR" class="text-danger">Không được để trống!</small>
+        <small v-if="errorV" class="text-danger">Mật khẩu phải lớn hơn 8 ký tự - chữ hoa - chữ thường - ký tự đặc biệt</small>
+        <small v-if="errorC" class="text-danger">Mật khẩu không trùng nhau!</small>
+        <div class="box">
+          <input class="email" type="text" placeholder="Mật khẩu" v-model="password">
+          <input class="email" type="text" placeholder="Nhập lại mật khẩu" v-model="confirmPassword">
+          <button @click="handleSubmit" class="fw-semibold" type="button">ĐĂNG KÝ</button>
+        </div>
+        <div class="footer">Bạn đã có tài khoản?
+          <router-link to="/buyer/login">Đăng nhập</router-link>
         </div>
       </div>
     </div>
@@ -42,7 +80,197 @@
 </template>
 
 <script>
+import axios from 'axios';
 
+export default
+  {
+    data() {
+      return {
+        numberPhone: null,
+        errorPhone: false,
+        errorOTP: false,
+        errorR: false,
+        errorPhoneR: false,
+        errorC: false,
+        errorV: false,
+        showRegsiter: true,
+        showOPT: false,
+        showFormCreate: false,
+        OTP: null,
+        secret: null,
+        password: null,
+        confirmPassword: null,
+        resendTimeout: 0,
+        userFacebook: null,
+      }
+    },
+    watch: {
+      errorPhone(newP, oldP) {
+        this.errorPhoneR = false;
+      },
+      userFacebook(newU, oldU) {
+      this.createUserFace(this.userFacebook);
+    }
+    },
+    methods: {
+      async login() {
+      try {
+        const { status } = await new Promise(FB.getLoginStatus);
+        if (status === 'connected') {
+          console.log(status);
+        } else {
+          const { authResponse } = await new Promise(FB.login);
+          const userID = authResponse.userID
+          const accessToken = authResponse.accessToken
+
+          const apiEndpoint = `https://graph.facebook.com/v13.0/${userID}?fields=id,name,email,gender,picture&access_token=${accessToken}`;
+
+          fetch(apiEndpoint)
+            .then(response => response.json())
+            .then(userData => {
+              const data = {
+                'user_facebook_id': userData.id,
+                'user_facebook_name': userData.name,
+              }
+              this.userFacebook = data
+            })
+            .catch(error => {
+              console.error('Lỗi khi lấy thông tin người dùng:', error);
+            });
+
+          if (!authResponse) {
+            this.$router.push({
+              path: `/`
+            });
+          }
+        }
+
+      } catch (error) {
+        console.log(error);
+      }
+    },
+    createUserFace(data) {
+      axios.post(`/api/user-facebook/new`, data)
+        .then(response => {
+          console.log(response.data)
+          this.$router.push('/')
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    },
+      handlePhone() {
+        if (this.showOPT) {
+          this.startResendTimer();
+        }
+
+        if (this.numberPhone == null) {
+          this.errorPhoneR = true;
+        }
+
+        if (typeof this.numberPhone !== "number" && this.errorPhone == false) {
+          const numberPhone = this.numberPhone.substr(1)
+          axios.post(`/api/auth/sms`, numberPhone)
+            .then(response => {
+              this.secret = response.data.data
+              this.showRegsiter = false;
+              this.showOPT = true;
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        }
+      },
+      goBack() {
+        this.showRegsiter = true;
+        this.numberPhone = null;
+        this.showOPT = false;
+        this.OTP = null;
+        this.showFormCreate = false;
+        this.password = null;
+        this.confirmPassword = null;
+        this.resendTimeout = 0;
+      },
+      handleValidate() {
+        const phoneRegex = /^[0-9]{10}$/;
+
+        if (phoneRegex.test(this.numberPhone)) {
+          this.errorPhone = false;
+        } else {
+          this.errorPhone = true;
+        }
+      },
+      handleOTP() {
+
+        if (typeof this.OTP !== "number") {
+          let data = [
+            this.secret,
+            this.OTP,
+          ]
+
+          axios.post(`/api/auth/sms/otp`, data)
+            .then(response => {
+              this.showFormCreate = response.data.data
+
+              if (response.data.data !== true) {
+                this.errorOTP = true
+              } else {
+                this.errorOTP = false
+
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+        }
+      },
+      startResendTimer() {
+        this.resendTimeout = 15;
+        const timerInterval = setInterval(() => {
+          this.resendTimeout -= 1;
+          if (this.resendTimeout <= 0) {
+            clearInterval(timerInterval);
+          }
+        }, 1000);
+      },
+      handleSubmit() {
+        if (this.password == null ||
+          this.password == '' ||
+          this.confirmPassword == null ||
+          this.confirmPassword == ''
+        ) {
+          this.errorR = true;
+        } else {
+          this.errorR = false;
+          if (this.password !== this.confirmPassword) {
+            this.errorC = true;
+          } else if(!this.validatePassword(this.password)) {
+            this.errorV = true;
+          }
+          
+          else {
+            const data = {
+              'phone_number': this.numberPhone,
+              'password': this.password
+            }
+
+            axios.post(`/api/user/new`, data)
+              .then(response => {
+                console.log(response.data)
+                this.$router.push('/buyer/login')
+              })
+              .catch(error => {
+                console.error('Error:', error);
+              });
+          }
+        }
+      },
+      validatePassword(password) {
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        return passwordRegex.test(password);
+      }
+    }
+  }
 </script>
 
 <style scoped>
@@ -74,7 +302,7 @@
 
 .form-control {
   width: 397px;
-  min-height: 452px;
+  min-height: 550px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
@@ -83,6 +311,7 @@
 
 .box {
   text-align: center;
+  margin-top: 10px;
 }
 
 .login {
@@ -91,6 +320,19 @@
   padding: 22px 16px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.rehome {
+  font-size: 14px;
+  color: #222;
+  padding: 22px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+small {
+  padding: 0px 0px 0px 16px;
 }
 
 .email {
@@ -105,11 +347,12 @@
 }
 
 
-input[type=email]:focus, input[type=password]:focus {
+input[type=email]:focus,
+input[type=password]:focus {
   border: 1px solid #cccccc;
 }
 
-input[type=button] {
+button[type=button] {
   width: 335px;
   height: 40.8px;
   border-radius: 2px;
@@ -121,6 +364,11 @@ input[type=button] {
   border: none;
   text-decoration: none;
   cursor: pointer;
+}
+
+button[disabled] {
+  background-color: #ee4d2d8e;
+  cursor: default;
 }
 
 .line1 {
@@ -164,7 +412,7 @@ button[type=includeFb] {
   height: 40px;
   border-radius: 2px;
   border: 1px solid #ccc;
-  background-image: url('../assets/img/Facebook_Logo_(2019).png.webp');
+  background-image: url('../assets/img/Facebook_Logo.webp');
   background-size: 22px 22px;
   background-repeat: no-repeat;
   background-position: 9px 9px;

@@ -3,11 +3,24 @@ const seller = [
         path: "/portal",
         name: "",
         component: () => import("../layouts/seller.vue"),
+        beforeEnter: (to, from, next) => {
+            const isAuthenticated = ''
+            if (isAuthenticated) {
+              next();
+            } else {
+              next("buyer/login");
+            }
+          },
         children:[
             {
                 path: "",
                 name: "Trang chủ",
                 component: () => import("../pages/seller/home/index.vue"),
+            },
+            {
+                path: "setting/transport",
+                name: "Cài đặt vận chuyển",
+                component: () => import("../pages/seller/setting_transport/index.vue"),
             },
             {
                 path: "product/new",

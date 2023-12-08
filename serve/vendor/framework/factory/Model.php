@@ -9,7 +9,7 @@ class Model
 
         $fullClassName = 'App\models\\' . $modelClassName;
         $model = new $fullClassName();
-        $lastId = $model->create($data);     
+        $lastId = $model->create($data);
 
         return $lastId;
     }
@@ -40,6 +40,16 @@ class Model
         $fullClassName = 'App\models\\' . $modelClassName;
         $model = new $fullClassName();
         $count = $model->update($id, $data);
+
+        return $count;
+    }
+
+    public static function updateFor($modelClassName, $id, array $data)
+    {
+
+        $fullClassName = 'App\models\\' . $modelClassName;
+        $model = new $fullClassName();
+        $count = $model->updateFor($id, $data);
 
         return $count;
     }

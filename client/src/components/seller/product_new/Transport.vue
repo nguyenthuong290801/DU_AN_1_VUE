@@ -93,7 +93,7 @@
   </div>
   <p class="float-end px-3">Cài đặt đơn vị vận chuyển ở đây chỉ áp dụng cho sản phẩm này.
     Shop có thể
-    <router-link to="">nhấn tại đây</router-link>
+    <router-link to="/portal/setting/transport">nhấn tại đây</router-link>
     để kích hoạt thêm phương thức vận chuyển cho sản phẩm.
   </p>
 </template>

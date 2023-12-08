@@ -15,6 +15,18 @@ const auth = [
                 name: "register",
                 component: () => import("../pages/auth/register/index.vue"),
                 meta: { pageTitle: "Đăng ký" },
+            },
+            {
+                path: "forgot-password",
+                name: "forget-password",
+                component: () => import("../pages/auth/forgot_password/index.vue"),
+                meta: { pageTitle: "Quên mật khẩu" },
+            },
+            {
+                path: "login-phone",
+                name: "login-phone",
+                component: () => import("../pages/auth/login_phone/index.vue"),
+                meta: { pageTitle: "Đăng nhập" },
             }
         ]
     },

@@ -109,19 +109,19 @@ class Model implements ModelInterface
     {
         $whereClause = '';
         $params = [];
-    
+
         foreach ($conditions as $column => $value) {
             $paramName = ':' . $column;
             $whereClause .= "$column $operator $paramName AND ";
             $params[$paramName] = $value;
         }
-    
+
         $whereClause = rtrim($whereClause, ' AND ');
-    
+
         $query = "SELECT {$this->toString()} FROM {$this->table} WHERE $whereClause";
         $stmt = $this->pdo->prepare($query);
         $stmt->execute($params);
-    
+
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
@@ -182,6 +182,10 @@ class Model implements ModelInterface
         }
 
         return $this->pdo->lastInsertId();
+    }
+
+    public function updateFor($id, array $dataArray)
+    {
     }
 
     function slug($text)

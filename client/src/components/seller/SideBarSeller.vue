@@ -7,7 +7,7 @@
       </div>
       <ul v-show="openSections.shipping">
         <li><router-link to="#">Quản Lý Vận Chuyển</router-link></li>
-        <li><router-link to="#">Cài Đặt Vận Chuyển</router-link></li>
+        <li><router-link to="/portal/setting/transport">Cài Đặt Vận Chuyển</router-link></li>
       </ul>
     </div>
     <div class="sidebar-content">
