@@ -25,3 +25,5 @@ Route::post('/api/product/new', [ProductController::class, 'store']);
 Route::post('/api/product/edit', [ProductController::class, 'update']);
 Route::get('/api/product/list/all/{param}',  [ProductController::class, 'searchByName']);
 Route::post('/api/product/delete/{param}',  [ProductController::class, 'softDelete']);
+Route::get('/api/product/{param}', [ProductController::class, 'showProduct']);
+Route::get('/api/product-detail/{param}', [ProductController::class, 'showProductDetail']);

@@ -273,7 +273,7 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         ),
         'Illuminate\\' => 
         array (
-            0 => 'D:\\du_an_1\\DU_AN_1_VUE\\serve\\vendor',
+            0 => 'C:\\xampp\\htdocs\\DU_AN_1_VUE\\serve\\vendor',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

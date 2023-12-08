@@ -3178,3 +3178,219 @@ ______
 [2023-12-02 19:08:54] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
 ______
 [2023-12-02 19:08:54] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:58:47] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:58:47] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:58:56] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:58:56] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:03] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:03] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:26] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:26] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:28] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 19:59:28] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 20:10:55] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-02 20:10:55] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:35:53] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:35:53] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:35:54] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:35:54] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:55:06] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 07:55:06] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:34:00] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:34:00] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:34:31] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:34:31] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:24] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:24] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:27] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:27] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:35] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:35:35] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:36:58] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:36:58] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:37:03] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:37:03] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:39:34] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:39:34] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:39:37] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-03 16:39:37] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 10:51:42] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 10:51:42] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 10:51:43] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 10:51:43] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:17] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:17] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:25] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:25] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:32] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:32] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:33] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:33] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:36] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:41:36] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:46:54] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:46:54] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:46:56] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:46:56] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:03] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:03] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:16] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:16] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:33] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:33] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:34] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-04 11:47:34] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:26] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:26] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:29] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:29] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:32] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:32] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:37] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:11:37] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:12:10] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 09:12:10] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:34] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:34] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:35] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:35] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:46] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:46] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:46] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:37:46] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:01] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:01] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:02] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:02] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:03] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:38:03] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:04] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:04] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:05] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:05] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:09] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:09] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:52] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:52] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:53] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:53] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:56] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:56] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:57] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:57] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 10:40:58] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 11:06:36] Error: include_once(C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-06 11:06:36] Error: include_once(): Failed opening 'C:\xampp\htdocs\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197

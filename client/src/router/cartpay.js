@@ -5,10 +5,11 @@ const cartpay = [
         component: () => import("../layouts/cartpay.vue"),
         children:[
             {
-                path: "cart",
+                path: "/cart",
                 name: "cart",
                 component: () => import("../pages/client/cart/index.vue"),
                 meta: { pageTitle: "Giỏ Hàng" },
+                props: true,
             },
             {
                 path: "pay",

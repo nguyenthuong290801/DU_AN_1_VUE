@@ -92,11 +92,11 @@
           </div>
           <!-- ---------- -->
           <div class="col-md-2 header-cart">
-            <a href="#!cart">
+            <router-link :to="{ name: 'cart'}"> 
               <i class="header-cart-icon bi bi-cart2"></i>
               <div class="header-cart-amount-a">
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </div>

@@ -278,4 +278,30 @@ class ProductController extends Controller
             'data' => !empty($data) ? (object) $data : null,
         ], !empty($data) ? 200 : 404);
     }
+
+    public function showProduct(Request $request)
+    {
+        $slug = $request->getParam();
+
+        $data = Model::where('Product', ['slug' => $slug]);
+
+        Response::json([
+            'status' => !empty($data) ? 200 : 404,
+            'message' => !empty($data) ? 'Success' : 'Not Found',
+            'data' => !empty($data) ? (object) $data : null,
+        ], !empty($data) ? 200 : 404);
+    }
+
+    public function showProductDetail(Request $request)
+    {
+        $product_id = $request->getParam();
+
+        $data = Model::where('ProductDetail', ['product_id' => $product_id]);
+
+        Response::json([
+            'status' => !empty($data) ? 200 : 404,
+            'message' => !empty($data) ? 'Success' : 'Not Found',
+            'data' => !empty($data) ? (object) $data : null,
+        ], !empty($data) ? 200 : 404);
+    }
 }

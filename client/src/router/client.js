@@ -10,9 +10,10 @@ const client = [
                 component: () => import("../pages/client/home/index.vue"),
             },
             {
-                path: "product/detail", // Đường dẫn mới
-                name: "", // Tên mới
+                path: "product/detail/:slug", 
+                name: "productDetail",
                 component: () => import("../pages/client/product_detail/index.vue"),
+                props: true,
             },
         ]
     },
