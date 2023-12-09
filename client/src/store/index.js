@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 export default new Vuex.Store({
     state: {
         cart: [],
+        isAuth: false,
     },
     getters: {
         cartItems: state => state.cart,
@@ -26,6 +27,9 @@ export default new Vuex.Store({
             if (state.cartItems && state.cartItems.length > 0 && state.cartItems[index]) {
                 state.cartItems[index].qty = qty;
             }
+        },
+        updateAuthStatus(state, isAuthenticated) {
+            state.isAuth = isAuthenticated;
         },
     },
 });

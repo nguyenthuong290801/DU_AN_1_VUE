@@ -179,8 +179,4 @@ class ApiController extends Controller
             ], 404);
         }
     }
-
-    public function loginPhone()
-    {
-    }
 }

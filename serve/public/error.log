@@ -5220,3 +5220,13 @@ ______
 ______
 [2023-12-07 15:58:27] Error: Since symfony/serializer 6.3: "Infobip\SplFileObjectNormalizer" should implement "DenormalizerInterface::getSupportedTypes(?string $format): array". in D:\du_an_1\DU_AN_1_VUE\serve\vendor\symfony\deprecation-contracts\function.php on line 25
 >>>>>>> f652ac8f5fa34f529a41224d39f9da6bc0126ce8
+______
+[2023-12-08 23:52:48] Error: Undefined array key "PATH_INFO" in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 103
+______
+[2023-12-08 23:52:48] Error: explode(): Passing null to parameter #2 ($string) of type string is deprecated in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Request.php on line 104
+______
+[2023-12-08 23:52:48] Error: include_once(D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php): Failed to open stream: No such file or directory in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-08 23:52:48] Error: include_once(): Failed opening 'D:\du_an_1\DU_AN_1_VUE\serve/resources/views/_404.php' for inclusion (include_path='C:\xampp\php\PEAR') in D:\du_an_1\DU_AN_1_VUE\serve\vendor\framework\Router.php on line 197
+______
+[2023-12-09 15:52:55] Error: Array to string conversion in D:\du_an_1\DU_AN_1_VUE\serve\app\controllers\API\ProductController.php on line 68

@@ -1,17 +1,21 @@
+import store from '@/store/index.js'
+
 const seller = [
     {
         path: "/portal",
         name: "",
         component: () => import("../layouts/seller.vue"),
         beforeEnter: (to, from, next) => {
-            const isAuthenticated = ''
-            if (isAuthenticated) {
-              next();
+            const isAuth = store.state.isAuth;
+            console.log('isAuth:', isAuth);
+            if (isAuth) {
+                next();
             } else {
-              next("buyer/login");
+                console.warn('Not authenticated. Redirecting to /buyer/register');
+                next("/buyer/login");
             }
-          },
-        children:[
+        },
+        children: [
             {
                 path: "",
                 name: "Trang chủ",
@@ -36,7 +40,7 @@ const seller = [
                 path: "product/list",
                 name: "Quản lý sản phẩm",
                 component: () => import("../pages/seller/product_list/index.vue"),
-                children:[
+                children: [
                     {
                         path: "all",
                         name: "Tất cả",
