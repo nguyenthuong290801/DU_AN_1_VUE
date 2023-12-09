@@ -67,7 +67,8 @@
               <div class="storenav">
                 <div class="checkbox3 mx-1">
                   <label class="stardust-checkbox">
-                    <input class="stardust-checkbox__input" type="checkbox" v-model="checkbox3Value" />
+                    <input class="stardust-checkbox__input" type="checkbox" v-model="checkbox3Value"
+                      @change="handleCheckbox3Change" />
                   </label>
                 </div>
                 <div class="title-clothes">
@@ -104,7 +105,7 @@
                     <button @click="handleQty('minus')" class="btn5 decrease">
                       <i class="bi bi-dash-lg"></i>
                     </button>
-                    <input class="btn5 count-number" type="text" v-model="qty" />
+                    <input class="amount-product-input" type="text" v-model="product.qty">
                     <button @click="handleQty('plus')" class="btn5 increase">
                       <i class="bi bi-plus-lg"></i>
                     </button>
@@ -215,10 +216,10 @@
         <button class="clear-btn-style KbDVuv">Lưu vào danh mục đã thích</button>
         <div style="flex: 1"></div>
         <div class="last-total-item-container">
-          <div class="last-total-item-focus">
+          <div class="last-total-item-focus" v-if="isCalculating || checkbox3Value">
             <div class="last-total-item">
-              <div class="title-total-last fw-medium">Tổng thanh toán (0 item):</div>
-              <div class="total-last-count">₫0</div>
+              <div class="title-total-last fw-medium">Tổng thanh toán ({{ cart.length }} item):</div>
+              <div class="total-last-count">₫{{ formatPrice(totalPrice) }}</div>
             </div>
           </div>
           <div class="onR5FG"></div>
@@ -240,7 +241,8 @@ export default {
       qty: 1,
       checkbox1Value: false,
       checkbox2Value: false,
-      checkbox3Value: false,
+      checkbox3Value: true,
+      isCalculating: false,
     };
   },
   mounted() {
@@ -250,6 +252,29 @@ export default {
     cart: function (newCart) {
       console.log('Giỏ hàng sau khi thay đổi:', newCart);
     },
+
+    checkbox1Value(newCheckbox1Value) {
+      this.isCalculating = true;
+
+      // Tính tổng giá của tất cả sản phẩm
+      this.totalPrice = this.cart.reduce((acc, product) => {
+        return acc + product.price * product.qty;
+      }, 0);
+
+      // Cập nhật giá và item
+      this.isCalculating = false;
+    },
+    checkbox2Value(newCheckbox2Value) {
+      this.isCalculating = true;
+
+      // Tính tổng giá của tất cả sản phẩm
+      this.totalPrice = this.cart.reduce((acc, product) => {
+        return acc + product.price * product.qty;
+      }, 0);
+
+      // Cập nhật giá và item
+      this.isCalculating = false;
+    },
   },
   computed: {
     cart() {
@@ -257,16 +282,23 @@ export default {
       console.log('Dữ liệu giỏ hàng từ computed property:', cartItems);
       return cartItems;
     },
+
+    totalPrice() {
+      return this.isCalculating ? 0 : this.cart.reduce((acc, product) => {
+        return acc + product.price * product.qty;
+      }, 0);
+    },
   },
   methods: {
     addToCart() {
       const productToAdd = { ...this.product, qty: this.qty };
       this.$store.commit('addToCart', productToAdd);
-      this.qty = 1; // Đặt lại giá trị qty về 1 sau khi thêm vào giỏ hàng
+      this.qty = 1;
 
       console.log('Sản phẩm đã được thêm vào giỏ hàng:', productToAdd);
       console.log('Giỏ hàng sau khi thêm:', this.$store.getters.cartItems);
     },
+
     formatPrice(price) {
       const formatter = new Intl.NumberFormat('vi-VN', {
         style: 'currency',
@@ -298,6 +330,19 @@ export default {
         this.checkbox3Value = true;
       } else {
         this.checkbox3Value = false;
+      }
+    },
+    handleCheckbox3Change() {
+      // Nếu checkbox3Value được chọn, bắt đầu tính giá
+      if (this.checkbox3Value) {
+        this.isCalculating = false;
+        this.totalPrice = this.cart.reduce((acc, product) => {
+          return acc + product.price * product.qty;
+        }, 0);
+      } else {
+        // Nếu checkbox3Value không được chọn, ẩn tổng giá
+        this.isCalculating = true;
+        this.totalPrice = 0;
       }
     },
   },
@@ -1072,4 +1117,5 @@ button {
   height: 1rem;
   cursor: pointer;
   user-select: none;
-}</style>
+}
+</style>

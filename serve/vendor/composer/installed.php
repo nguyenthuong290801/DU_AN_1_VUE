@@ -3,7 +3,7 @@
         'name' => 'shoppe/e-commerce',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '0d09fe2fe8a104d0bac5d7082fe0a5ef2bd9a005',
+        'reference' => 'fe26403a0dba63dee352565b59d40df23ab011f7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -367,7 +367,7 @@
         'shoppe/e-commerce' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '0d09fe2fe8a104d0bac5d7082fe0a5ef2bd9a005',
+            'reference' => 'fe26403a0dba63dee352565b59d40df23ab011f7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

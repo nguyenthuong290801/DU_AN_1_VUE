@@ -546,6 +546,7 @@ export default {
       } else if (check === 'minus' && this.qty > 1) {
         this.qty--;
       }
+      this.$store.commit('updateCartItemQty', { index: this.product.id, qty: this.qty })
     },
 
     addToCart() {
