@@ -16,6 +16,11 @@ import '@splidejs/vue-splide/css';
 import 'bootstrap';
 import store from './store';
 
+const savedIsAuth = localStorage.getItem('isAuth');
+if (savedIsAuth) {
+    store.commit('updateAuthStatus', savedIsAuth === 'true');
+}
+
 const app = createApp(App)
 app.use(router)
 app.use( VueSplide)

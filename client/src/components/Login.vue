@@ -137,6 +137,7 @@ export default {
       axios.post(`/api/user-facebook/new`, data)
         .then(response => {
           console.log(response.data)
+
           this.$router.push('/')
         })
         .catch(error => {
@@ -170,12 +171,20 @@ export default {
 
       axios.post(`/api/auth/sms/login`, data)
         .then(response => {
-          console.log(response.data)
-          this.$router.push('/')
+          try {
+            if (response.data) {
+              this.$store.commit('updateAuthStatus', true);
+              this.$router.push('/portal');
+              localStorage.setItem('isAuth', true);
+            }
+          } catch (error) {
+            console.error('Error:', error);
+          }
         })
         .catch(error => {
           console.error('Error:', error);
         });
+
     },
     showLoading() {
       return new Promise((resolve, reject) => {
