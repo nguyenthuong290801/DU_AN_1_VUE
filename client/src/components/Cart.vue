@@ -105,7 +105,7 @@
                     <button @click="handleQty('minus')" class="btn5 decrease">
                       <i class="bi bi-dash-lg"></i>
                     </button>
-                    <input class="amount-product-input" type="text" v-model="product.qty">
+                    <input class="amount-product-input" type="text" v-model="product.qty" style="width: 40px; height: 31px; border: 1px solid #ccc; padding: 0 8px;">
                     <button @click="handleQty('plus')" class="btn5 increase">
                       <i class="bi bi-plus-lg"></i>
                     </button>
@@ -115,7 +115,7 @@
                   <span>đ{{ formatPrice(product.price) }}</span>
                 </div>
                 <div class="delete find">
-                  <button class="delete-btn">Xóa</button>
+                  <button class="delete-btn" @click="deleteProduct(product.id)">Xóa</button>
                   <div class="similar">
                     <button class="shopee-button-no-outline y36pik">
                       <span class="find-similar fw-medium">Tìm sản phẩm tương tự</span>
@@ -224,16 +224,18 @@
           </div>
           <div class="onR5FG"></div>
         </div>
-        <button class="shopee-button-solid shopee-button-solid--primary">
-          <span class="checkout-span fw-medium">Mua hàng</span>
-        </button>
+        <router-link :to="{ name: 'pay' }" class="text-decoration-none text-white">
+          <button class="shopee-button-solid shopee-button-solid--primary">
+            <span class="checkout-span fw-medium" @click="goToPay"> Mua hàng</span>
+          </button>
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
+import Swal from 'sweetalert2';
 export default {
   data() {
     return {
@@ -297,6 +299,22 @@ export default {
 
       console.log('Sản phẩm đã được thêm vào giỏ hàng:', productToAdd);
       console.log('Giỏ hàng sau khi thêm:', this.$store.getters.cartItems);
+
+    },
+
+    goToPay() {
+      if (this.checkbox3Value == true) {
+        const totalPrice = this.totalPrice;
+        this.$router.push({ name: '/pay', params: { totalPrice } });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Vui lòng chọn ít nhất 1 sản phẩm',
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        event.preventDefault();
+      }
     },
 
     formatPrice(price) {
@@ -313,6 +331,25 @@ export default {
       } else if (check === 'minus' && this.qty > 1) {
         this.qty--;
       }
+    },
+
+    deleteProduct(productId) {
+      console.log('xóa', productId);
+      Swal.fire({
+        title: 'Xác nhận xóa sản phẩm',
+        text: 'Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Xóa',
+        cancelButtonText: 'Hủy',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.$store.commit('deleteProduct', productId);
+          Swal.fire('Xóa thành công!', '', 'success');
+        }
+      });
     },
 
     handleCheckbox1Change() {

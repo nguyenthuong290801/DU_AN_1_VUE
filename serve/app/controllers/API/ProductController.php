@@ -40,7 +40,7 @@ class ProductController extends Controller
         foreach ($products as $product) {
 
             if (isset($product['id'])) {
-                $item = Model::where('ProductDetail', ['id' => $product['id']]);
+                $item = Model::where('ProductDetail', ['product_id' => $product['id']]);
 
                 foreach ($item as $key => $value) {
                     $productDetail[] = $value;
@@ -54,7 +54,7 @@ class ProductController extends Controller
             'data' => !empty($productDetail) ? (object) $productDetail : null,
         ], !empty($productDetail) ? 200 : 404);
     }
-
+    
     public function getProductMedia()
     {
         $products = Model::all('Product');

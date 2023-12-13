@@ -1,9 +1,9 @@
 
 import Vuex from 'vuex';
-
+const saveCart = JSON.parse(localStorage.getItem('cart')) || [];
 export default new Vuex.Store({
     state: {
-        cart: [],
+        cart: saveCart,
         isAuth: false,
     },
     getters: {
@@ -19,6 +19,7 @@ export default new Vuex.Store({
             } else {
                 // Nếu sản phẩm chưa tồn tại, thêm mới vào giỏ hàng
                 state.cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(state.cart));
             }
             console.log('Sản phẩm đã được thêm vào giỏ hàng:', product);
         },
@@ -28,6 +29,14 @@ export default new Vuex.Store({
                 state.cartItems[index].qty = qty;
             }
         },
+
+        deleteProduct(state, productId) {
+            const productIndex = state.cart.findIndex(item => item.id === productId);
+            if (productIndex !== -1) {
+                state.cart.splice(productIndex, 1);
+            }
+        },
+
         updateAuthStatus(state, isAuthenticated) {
             state.isAuth = isAuthenticated;
         },

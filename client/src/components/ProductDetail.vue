@@ -552,7 +552,7 @@ export default {
     addToCart() {
       const productToAdd = { ...this.product, qty: this.qty };
       this.$store.commit('addToCart', productToAdd);
-      this.qty = 1; // Đặt lại giá trị qty về 1 sau khi thêm vào giỏ hàng
+      this.qty = 1; 
 
       console.log('Sản phẩm đã được thêm vào giỏ hàng:', productToAdd);
       console.log('Giỏ hàng sau khi thêm:', this.$store.getters.cartItems);

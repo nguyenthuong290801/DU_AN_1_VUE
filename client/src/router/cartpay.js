@@ -12,7 +12,7 @@ const cartpay = [
                 props: true,
             },
             {
-                path: "pay",
+                path: "/pay",
                 name: "pay",
                 component: () => import("../pages/client/pay/index.vue"),
                 meta: { pageTitle: "Thanh Toán" },

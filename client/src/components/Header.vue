@@ -82,7 +82,7 @@
           </div>
           <div class="col-md-8 header-search">
             <div class="row header-search-a">
-              <input class="col-11 header-search-input" style="max-width: 89.466667%; padding-top:6px"
+              <input class="col-11 header-search-input" style="max-width: 89.466667%; padding-top:9px"
                      ng-model="search" type="text" placeholder="Shopee bao ship 0Đ - Đăng ký ngay!">
               <button type="button" class="col-1 header-search-btn" ng-click="searchSP()"
                       data-toggle="modal" data-target="#exampleModal">

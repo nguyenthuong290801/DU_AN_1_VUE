@@ -15,6 +15,11 @@ const client = [
                 component: () => import("../pages/client/product_detail/index.vue"),
                 props: true,
             },
+            {
+                path: "/user",
+                name: "user",
+                component: () => import("../pages/client/user/index.vue"),
+            },
         ]
     },
 ]

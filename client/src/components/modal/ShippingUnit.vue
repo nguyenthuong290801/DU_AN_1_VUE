@@ -1,12 +1,12 @@
 <template>
   <button type="button" class="elfp9W div-style bg-white fw-semibold border-0 bg-white" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop">
+    data-bs-target="#staticBackdrop">
     Thay đổi
   </button>
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-       aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg border-1">
       <div class="modal-content position-relative">
         <div>
@@ -21,19 +21,14 @@
               </div>
               <div class="ZtGG3s">
                 <div v-for="(item, index) in items" :key="index" class="d-flex flex-column mb-1">
-                  <div
-                      role="radio"
-                      class="WEAqLJ"
-                      :class="{ 'clicked': item.clicked }"
-                      @click="toggleClicked(index)"
-                  >
+                  <div role="radio" class="WEAqLJ" :class="{ 'clicked': item.clicked }" @click="toggleClicked(index)">
                     <div class="E0Vlko"
-                         :style="{ 'box-shadow': item.clicked ? 'inset 4px 0 0 #ee4d2d' : 'inset 4px 0 0 rgba(0, 0, 0, .09)' }">
+                      :style="{ 'box-shadow': item.clicked ? 'inset 4px 0 0 #ee4d2d' : 'inset 4px 0 0 rgba(0, 0, 0, .09)' }">
                       <div class="_0wKJMs">
                         <div class="D4KQjo">
                           <div class="ebivte">{{ item.label }}</div>
                           <div class="QmQd0E">
-                            <div class="lcrUW8 rs0NUN">{{ item.price }}</div>
+                            <div style="text-transform: lowercase;" class="lcrUW8">đ{{ formatPrice(item.price) }}</div>
                           </div>
                         </div>
                         <div>
@@ -43,10 +38,9 @@
                       <!-- dấu tích -->
                       <div v-if="item.clicked" class="XS5QEw _9i2fbO">
                         <svg enable-background="new 0 0 15 15" class="stardust-icon stardust-icon-tick">
-                          <path
-                              stroke="none"
-                              d="m6.5 13.6c-.2 0-.5-.1-.7-.2l-5.5-4.8c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l4.7 4 6.8-9.4c.3-.4.9-.5 1.4-.2.4.3.5 1 .2 1.4l-7.4 10.3c-.2.2-.4.4-.7.4 0 0 0 0-.1 0z"
-                          ></path>
+                          <path stroke="none"
+                            d="m6.5 13.6c-.2 0-.5-.1-.7-.2l-5.5-4.8c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l4.7 4 6.8-9.4c.3-.4.9-.5 1.4-.2.4.3.5 1 .2 1.4l-7.4 10.3c-.2.2-.4.4-.7.4 0 0 0 0-.1 0z">
+                          </path>
                         </svg>
                       </div>
                     </div>
@@ -56,27 +50,50 @@
             </div>
           </div>
         </div>
-      <div class="d-flex mt-5 pt-5 justify-content-end p-4">
-        <button class="close mt-5 bg-white fw-medium" data-bs-dismiss="modal">TRỞ LẠI</button>
-        <button class="confirm mt-5 fw-medium">HOÀN THÀNH</button>
-      </div>
+        <div class="d-flex mt-5 pt-5 justify-content-end p-4">
+          <button class="close mt-5 bg-white fw-medium" data-bs-dismiss="modal">TRỞ LẠI</button>
+          <button class="confirm mt-5 fw-medium" @click="handleAddToCart">HOÀN THÀNH</button>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import Swal from 'sweetalert2';
+import { ref, defineProps } from 'vue';
+
+const props = defineProps(['shippingPrice', 'handleAddToCart']);
 
 const items = ref([
-  {label: 'Nhanh', price: '₫31.500', deliveryDate: 'Nhận hàng vào 28 Th11 - 29 Th11', clicked: false},
-  {label: 'Tiết kiệm', price: '₫26.000', deliveryDate: 'Nhận hàng vào 28 Th11 - 29 Th11', clicked: false},
+  { label: 'Nhanh', price: '31500', deliveryDate: 'Nhận hàng vào 28 Th11 - 29 Th11', clicked: false },
+  { label: 'Tiết kiệm', price: '26000', deliveryDate: 'Nhận hàng vào 28 Th11 - 29 Th11', clicked: false },
 ]);
 
 const toggleClicked = (index) => {
   items.value.forEach((item, i) => {
     item.clicked = i === index ? !item.clicked : false;
   });
+};
+
+const handleAddToCart = () => {
+  const clickedItem = items.value.find((item) => item.clicked);
+  console.log('Item được click:', clickedItem);
+  props.handleAddToCart(clickedItem.price);
+  Swal.fire({
+    icon: 'success',
+    title: 'Thay đổi thành công',
+    showConfirmButton: false,
+    timer: 1500,
+  });
+};
+
+const formatPrice = (price) => {
+  const formatter = new Intl.NumberFormat('vi-VN', {
+    style: 'currency',
+    currency: 'VND',
+  });
+  return formatter.format(price).replace('₫', '');
 };
 </script>
 

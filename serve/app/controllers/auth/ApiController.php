@@ -34,7 +34,7 @@ class ApiController extends Controller
         }
 
         $data = '';
-        $data = new Sms($numberPhone, 'Shopee', $message);
+        // $data = new Sms($numberPhone, 'Shopee', $message);
 
         if ($data == 'PENDING') {
             $msg = 'SMS is pending for processing.';

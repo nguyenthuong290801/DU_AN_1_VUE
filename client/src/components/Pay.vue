@@ -6,7 +6,8 @@
         <div class="d-flex align-items-center mb-2">
           <svg height="16" viewBox="0 0 12 16" width="12">
             <path fill="#ee4d2d" fill-rule="evenodd"
-                  d="M6 3.2c1.506 0 2.727 1.195 2.727 2.667 0 1.473-1.22 2.666-2.727 2.666S3.273 7.34 3.273 5.867C3.273 4.395 4.493 3.2 6 3.2zM0 6c0-3.315 2.686-6 6-6s6 2.685 6 6c0 2.498-1.964 5.742-6 9.933C1.613 11.743 0 8.498 0 6z"></path>
+              d="M6 3.2c1.506 0 2.727 1.195 2.727 2.667 0 1.473-1.22 2.666-2.727 2.666S3.273 7.34 3.273 5.867C3.273 4.395 4.493 3.2 6 3.2zM0 6c0-3.315 2.686-6 6-6s6 2.685 6 6c0 2.498-1.964 5.742-6 9.933C1.613 11.743 0 8.498 0 6z">
+            </path>
           </svg>
           <h2 class="mx-2 fs-5 fw-normal" style="color: #ee4d2d">Địa Chỉ Nhận Hàng</h2>
         </div>
@@ -32,10 +33,11 @@
           <div class="wholepleake me-5">
             <svg width="62" height="16" fill="none" class="me-2">
               <path fill="#ee4d2d" fill-rule="evenodd"
-                    d="M0 2C0 .9.9 0 2 0h58a2 2 0 012 2v12a2 2 0 01-2 2H2a2 2 0 01-2-2V2z"></path>
+                d="M0 2C0 .9.9 0 2 0h58a2 2 0 012 2v12a2 2 0 01-2 2H2a2 2 0 01-2-2V2z"></path>
               <g clip-path="">
                 <path fill="#fff"
-                      d="M8.7 13H7V8.7L5.6 6.3A828.9 828.9 0 004 4h2l2 3.3a1197.3 1197.3 0 002-3.3h1.6L8.7 8.7V13zm7.9-1.7h1.7c0 .3-.2.6-.5 1-.2.3-.5.5-1 .7l-.6.2h-.8c-.5 0-1 0-1.5-.2l-1-.8a4 4 0 01-.9-2.4c0-1 .3-1.9 1-2.6a3 3 0 012.4-1l.8.1a2.8 2.8 0 011.3.7l.4.6.3.8V10h-4.6l.2 1 .4.7.6.5.7.1c.4 0 .7 0 .9-.2l.2-.6v-.1zm0-2.3l-.1-1-.3-.3c0-.2-.1-.2-.2-.3l-.8-.2c-.3 0-.6.2-.9.5l-.3.5a4 4 0 00-.3.8h3zm-1.4-4.2l-.7.7h-1.4l1.5-2h1.1l1.5 2h-1.4l-.6-.7zm8.1 1.6H25V13h-1.7v-.5.1H23l-.7.5-.9.1-1-.1-.7-.4c-.3-.2-.4-.5-.6-.8l-.2-1.3V6.4h1.7v3.7c0 1 0 1.6.3 1.7.2.2.5.3.7.3h.4l.4-.2.3-.3.3-.5.2-1.4V6.4zM34.7 13a11.2 11.2 0 01-1.5.2 3.4 3.4 0 01-1.3-.2 2 2 0 01-.5-.3l-.3-.5-.2-.6V7.4h-1.2v-1h1.1V5h1.7v1.5h1.9v1h-2v3l.2 1.2.1.3.2.2h.3l.2.1c.2 0 .6 0 1.3-.3v1zm2.4 0h-1.7V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.4.4.2.7V13h-1.6V9.3 8.1l-.4-.6-.6-.2a1 1 0 00-.4.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.1.5-.1.9V13zm5.4-6.6H44V13h-1.6V6.4zm-.8-.9l1.8-2h1.8l-2.1 2h-1.5zm7.7 5.8H51v.5l-.4.5a2 2 0 01-.4.4l-.6.3-1.4.2c-.5 0-1 0-1.4-.2l-1-.7c-.3-.3-.5-.7-.6-1.2-.2-.4-.3-.9-.3-1.4 0-.5.1-1 .3-1.4a2.6 2.6 0 011.6-1.8c.4-.2.9-.3 1.4-.3.6 0 1 .1 1.5.3.4.1.7.4 1 .6l.2.5.1.5h-1.6c0-.3-.1-.5-.3-.6-.2-.2-.4-.3-.8-.3s-.8.2-1.2.6c-.3.4-.4 1-.4 2 0 .9.1 1.5.4 1.8.4.4.8.6 1.2.6h.5l.3-.2.2-.3v-.4zm4 1.7h-1.6V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.3.4.3.7V13h-1.6V9.3L56 8.1c-.1-.3-.2-.5-.4-.6l-.6-.2a1 1 0 00-.3.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.2.5V13z"></path>
+                  d="M8.7 13H7V8.7L5.6 6.3A828.9 828.9 0 004 4h2l2 3.3a1197.3 1197.3 0 002-3.3h1.6L8.7 8.7V13zm7.9-1.7h1.7c0 .3-.2.6-.5 1-.2.3-.5.5-1 .7l-.6.2h-.8c-.5 0-1 0-1.5-.2l-1-.8a4 4 0 01-.9-2.4c0-1 .3-1.9 1-2.6a3 3 0 012.4-1l.8.1a2.8 2.8 0 011.3.7l.4.6.3.8V10h-4.6l.2 1 .4.7.6.5.7.1c.4 0 .7 0 .9-.2l.2-.6v-.1zm0-2.3l-.1-1-.3-.3c0-.2-.1-.2-.2-.3l-.8-.2c-.3 0-.6.2-.9.5l-.3.5a4 4 0 00-.3.8h3zm-1.4-4.2l-.7.7h-1.4l1.5-2h1.1l1.5 2h-1.4l-.6-.7zm8.1 1.6H25V13h-1.7v-.5.1H23l-.7.5-.9.1-1-.1-.7-.4c-.3-.2-.4-.5-.6-.8l-.2-1.3V6.4h1.7v3.7c0 1 0 1.6.3 1.7.2.2.5.3.7.3h.4l.4-.2.3-.3.3-.5.2-1.4V6.4zM34.7 13a11.2 11.2 0 01-1.5.2 3.4 3.4 0 01-1.3-.2 2 2 0 01-.5-.3l-.3-.5-.2-.6V7.4h-1.2v-1h1.1V5h1.7v1.5h1.9v1h-2v3l.2 1.2.1.3.2.2h.3l.2.1c.2 0 .6 0 1.3-.3v1zm2.4 0h-1.7V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.4.4.2.7V13h-1.6V9.3 8.1l-.4-.6-.6-.2a1 1 0 00-.4.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.1.5-.1.9V13zm5.4-6.6H44V13h-1.6V6.4zm-.8-.9l1.8-2h1.8l-2.1 2h-1.5zm7.7 5.8H51v.5l-.4.5a2 2 0 01-.4.4l-.6.3-1.4.2c-.5 0-1 0-1.4-.2l-1-.7c-.3-.3-.5-.7-.6-1.2-.2-.4-.3-.9-.3-1.4 0-.5.1-1 .3-1.4a2.6 2.6 0 011.6-1.8c.4-.2.9-.3 1.4-.3.6 0 1 .1 1.5.3.4.1.7.4 1 .6l.2.5.1.5h-1.6c0-.3-.1-.5-.3-.6-.2-.2-.4-.3-.8-.3s-.8.2-1.2.6c-.3.4-.4 1-.4 2 0 .9.1 1.5.4 1.8.4.4.8.6 1.2.6h.5l.3-.2.2-.3v-.4zm4 1.7h-1.6V3.5h1.7v3.4a3.7 3.7 0 01.2-.1 2.8 2.8 0 013.4 0l.3.4.3.7V13h-1.6V9.3L56 8.1c-.1-.3-.2-.5-.4-.6l-.6-.2a1 1 0 00-.3.1 2 2 0 00-.4.2l-.3.3a3 3 0 00-.3.5l-.2.5V13z">
+                </path>
               </g>
             </svg>
             KHUYẾN MÃI 247
@@ -43,14 +45,15 @@
               <svg viewBox="0 0 16 16" class="chat">
                 <g fill-rule="evenodd">
                   <path fill="#00bfa5"
-                        d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path>
+                    d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z">
+                  </path>
                 </g>
               </svg>
               Chat ngay
             </a>
           </div>
         </div>
-        <div class="buying mt-3">
+        <div class="buying mt-3" v-for="(product, index) in cartItems" :key="index">
           <div class="mystore store-container">
             <div class="storenav mx-4">
               <div class="title-clothes">
@@ -58,8 +61,7 @@
                   <img src="../assets/img/item-28.jpeg" alt="" class="object-fit-cover" style="width: 40px">
                   <div class="describe-clothes">
                     <p class="describe-clothes-focus">
-                      Quần dài ống đứng màu trơn đơn giản thời trang
-                      cho nữ
+                      {{ product.name }}
                     </p>
                   </div>
                 </div>
@@ -78,14 +80,14 @@
               </div>
               <div class="show-money">
                 <div>
-                  <span class="linethrough">₫299.000</span>
+                  <span class="linethrough">{{ formatPrice(product.price) }}</span>
                 </div>
               </div>
               <div class="in-decrease-value">
-                1
+                {{ product.qty }}
               </div>
               <div class="total-price">
-                <span>₫299.000</span>
+                <span>₫{{ formatPrice(totalPrice) }}</span>
               </div>
             </div>
           </div>
@@ -96,18 +98,20 @@
               <g filter="">
                 <mask id="a" fill="#fff">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M1 2h18v2.32a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75V16H1v-2.12a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75V2z"></path>
+                    d="M1 2h18v2.32a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75V16H1v-2.12a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75V2z">
+                  </path>
                 </mask>
                 <path
-                    d="M19 2h1V1h-1v1zM1 2V1H0v1h1zm18 2.32l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zM19 16v1h1v-1h-1zM1 16H0v1h1v-1zm0-2.12l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zM19 1H1v2h18V1zm1 3.32V2h-2v2.32h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zM20 16v-2.13h-2V16h2zM1 17h18v-2H1v2zm-1-3.12V16h2v-2.12H0zm1.4.91a2.5 2.5 0 001.5-2.29h-2a.5.5 0 01-.3.46l.8 1.83zm1.5-2.29a2.5 2.5 0 00-1.5-2.3l-.8 1.84c.18.08.3.26.3.46h2zM0 10.48v.65h2v-.65H0zM.9 9.1a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 9.1h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 8.65zM0 7.08v.65h2v-.65H0zM.9 5.7a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 5.7h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 5.25zM0 2v2.33h2V2H0z"></path>
+                  d="M19 2h1V1h-1v1zM1 2V1H0v1h1zm18 2.32l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zM19 16v1h1v-1h-1zM1 16H0v1h1v-1zm0-2.12l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zM19 1H1v2h18V1zm1 3.32V2h-2v2.32h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zM20 16v-2.13h-2V16h2zM1 17h18v-2H1v2zm-1-3.12V16h2v-2.12H0zm1.4.91a2.5 2.5 0 001.5-2.29h-2a.5.5 0 01-.3.46l.8 1.83zm1.5-2.29a2.5 2.5 0 00-1.5-2.3l-.8 1.84c.18.08.3.26.3.46h2zM0 10.48v.65h2v-.65H0zM.9 9.1a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 9.1h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 8.65zM0 7.08v.65h2v-.65H0zM.9 5.7a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 5.7h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 5.25zM0 2v2.33h2V2H0z">
+                </path>
               </g>
               <path clip-rule="evenodd"
-                    d="M6.49 14.18h.86v-1.6h-.86v1.6zM6.49 11.18h.86v-1.6h-.86v1.6zM6.49 8.18h.86v-1.6h-.86v1.6zM6.49 5.18h.86v-1.6h-.86v1.6z"></path>
+                d="M6.49 14.18h.86v-1.6h-.86v1.6zM6.49 11.18h.86v-1.6h-.86v1.6zM6.49 8.18h.86v-1.6h-.86v1.6zM6.49 5.18h.86v-1.6h-.86v1.6z">
+              </path>
             </svg>
             <div class="platform-voucher">Voucher của Shop</div>
             <div style="flex: 1"></div>
-            <!--            <span class="select-enter fs-6">Chọn Voucher</span>-->
-            <VoucherModal/>
+            <VoucherModal />
           </div>
         </div>
       </div>
@@ -137,12 +141,12 @@
         <div class="GEI150"></div>
         <div class="_3zds3i">Nhận hàng vào ngày 24 Th11 - 25 Th11</div>
         <button class="elfp9W div-style bg-white fw-semibold">
-          <ShippingUnit/>
+          <ShippingUnit :handleAddToCart="handleAddToCartWithShipping" />
         </button>
 
         <div class="dnXfYW d-flex">
           <small>₫</small>
-          <div>31.200</div>
+          <div>{{ formatPrice(shippingPrice) }}</div>
         </div>
         <div class="EGXRIm"></div>
         <div class="_9evL72">
@@ -152,7 +156,8 @@
               <g>
                 <circle cx="7.5" cy="7.5" fill="none" r="6.5" stroke-miterlimit="10"></circle>
                 <path stroke="none"
-                      d="m5.3 5.3c.1-.3.3-.6.5-.8s.4-.4.7-.5.6-.2 1-.2c.3 0 .6 0 .9.1s.5.2.7.4.4.4.5.7.2.6.2.9c0 .2 0 .4-.1.6s-.1.3-.2.5c-.1.1-.2.2-.3.3-.1.2-.2.3-.4.4-.1.1-.2.2-.3.3s-.2.2-.3.4c-.1.1-.1.2-.2.4s-.1.3-.1.5v.4h-.9v-.5c0-.3.1-.6.2-.8s.2-.4.3-.5c.2-.2.3-.3.5-.5.1-.1.3-.3.4-.4.1-.2.2-.3.3-.5s.1-.4.1-.7c0-.4-.2-.7-.4-.9s-.5-.3-.9-.3c-.3 0-.5 0-.7.1-.1.1-.3.2-.4.4-.1.1-.2.3-.3.5 0 .2-.1.5-.1.7h-.9c0-.3.1-.7.2-1zm2.8 5.1v1.2h-1.2v-1.2z"></path>
+                  d="m5.3 5.3c.1-.3.3-.6.5-.8s.4-.4.7-.5.6-.2 1-.2c.3 0 .6 0 .9.1s.5.2.7.4.4.4.5.7.2.6.2.9c0 .2 0 .4-.1.6s-.1.3-.2.5c-.1.1-.2.2-.3.3-.1.2-.2.3-.4.4-.1.1-.2.2-.3.3s-.2.2-.3.4c-.1.1-.1.2-.2.4s-.1.3-.1.5v.4h-.9v-.5c0-.3.1-.6.2-.8s.2-.4.3-.5c.2-.2.3-.3.5-.5.1-.1.3-.3.4-.4.1-.2.2-.3.3-.5s.1-.4.1-.7c0-.4-.2-.7-.4-.9s-.5-.3-.9-.3c-.3 0-.5 0-.7.1-.1.1-.3.2-.4.4-.1.1-.2.3-.3.5 0 .2-.1.5-.1.7h-.9c0-.3.1-.7.2-1zm2.8 5.1v1.2h-1.2v-1.2z">
+                </path>
               </g>
             </svg>
           </a>
@@ -165,13 +170,16 @@
           <g filter="">
             <mask id="a" fill="#fff">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M1 2h18v2.32a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75V16H1v-2.12a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75V2z"></path>
+                d="M1 2h18v2.32a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75v.65a1.5 1.5 0 000 2.75V16H1v-2.12a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75v-.65a1.5 1.5 0 000-2.75V2z">
+              </path>
             </mask>
             <path
-                d="M19 2h1V1h-1v1zM1 2V1H0v1h1zm18 2.32l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zM19 16v1h1v-1h-1zM1 16H0v1h1v-1zm0-2.12l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zM19 1H1v2h18V1zm1 3.32V2h-2v2.32h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zM20 16v-2.13h-2V16h2zM1 17h18v-2H1v2zm-1-3.12V16h2v-2.12H0zm1.4.91a2.5 2.5 0 001.5-2.29h-2a.5.5 0 01-.3.46l.8 1.83zm1.5-2.29a2.5 2.5 0 00-1.5-2.3l-.8 1.84c.18.08.3.26.3.46h2zM0 10.48v.65h2v-.65H0zM.9 9.1a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 9.1h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 8.65zM0 7.08v.65h2v-.65H0zM.9 5.7a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 5.7h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 5.25zM0 2v2.33h2V2H0z"></path>
+              d="M19 2h1V1h-1v1zM1 2V1H0v1h1zm18 2.32l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zm0 .65l.4.92.6-.26v-.66h-1zm0 2.75h1v-.65l-.6-.26-.4.91zM19 16v1h1v-1h-1zM1 16H0v1h1v-1zm0-2.12l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zm0-.65l-.4-.92-.6.26v.66h1zm0-2.75H0v.65l.6.26.4-.91zM19 1H1v2h18V1zm1 3.32V2h-2v2.32h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zm.6 1.56v-.65h-2v.65h2zm-.9 1.38c0-.2.12-.38.3-.46l-.8-1.83a2.5 2.5 0 00-1.5 2.29h2zm.3.46a.5.5 0 01-.3-.46h-2c0 1.03.62 1.9 1.5 2.3l.8-1.84zM20 16v-2.13h-2V16h2zM1 17h18v-2H1v2zm-1-3.12V16h2v-2.12H0zm1.4.91a2.5 2.5 0 001.5-2.29h-2a.5.5 0 01-.3.46l.8 1.83zm1.5-2.29a2.5 2.5 0 00-1.5-2.3l-.8 1.84c.18.08.3.26.3.46h2zM0 10.48v.65h2v-.65H0zM.9 9.1a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 9.1h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 8.65zM0 7.08v.65h2v-.65H0zM.9 5.7a.5.5 0 01-.3.46l.8 1.83A2.5 2.5 0 002.9 5.7h-2zm-.3-.46c.18.08.3.26.3.46h2a2.5 2.5 0 00-1.5-2.3L.6 5.25zM0 2v2.33h2V2H0z">
+            </path>
           </g>
           <path clip-rule="evenodd"
-                d="M6.49 14.18h.86v-1.6h-.86v1.6zM6.49 11.18h.86v-1.6h-.86v1.6zM6.49 8.18h.86v-1.6h-.86v1.6zM6.49 5.18h.86v-1.6h-.86v1.6z"></path>
+            d="M6.49 14.18h.86v-1.6h-.86v1.6zM6.49 11.18h.86v-1.6h-.86v1.6zM6.49 8.18h.86v-1.6h-.86v1.6zM6.49 5.18h.86v-1.6h-.86v1.6z">
+          </path>
         </svg>
         <div class="platform-voucher fs-5">Shopee Voucher</div>
         <div style="flex: 1"></div>
@@ -180,7 +188,7 @@
       <div class="border-line"></div>
       <div class="right d-flex justify-content-between align-items-center m-4">
         <div class="d-flex justify-content-between align-items-center">
-          <img class="hpZGIt icon-coin-line" src="../assets/img/coin.png"/>
+          <img class="hpZGIt icon-coin-line" src="../assets/img/coin.png" />
           <div class="shopee-coin-title">Shopee Xu</div>
           <div class="count-num-selected">Không thể sử dụng xu</div>
         </div>
@@ -188,7 +196,7 @@
           <div class="last-part right-part">[- ₫0]</div>
           <div class="checkbox4">
             <label class="stardust-checkbox">
-              <input class="stardust-checkbox__input" type="checkbox"/>
+              <input class="stardust-checkbox__input" type="checkbox" disabled />
             </label>
           </div>
         </div>
@@ -207,88 +215,68 @@
         <div class="nav-align-top mb-4">
           <ul class="nav nav-tabs nav-fill" role="tablist">
             <li class="nav-item">
-              <button
-                  type="button"
-                  class="nav-link product-variation"
-                  role="tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#navs-justified-home"
-                  aria-controls="navs-justified-home"
-                  aria-selected="true"
-                  @focus="handleFocus"
-                  @blur="handleBlur"
-              >
+              <button type="button" class="nav-link product-variation" role="tab" data-bs-toggle="tab"
+                data-bs-target="#navs-justified-home" aria-controls="navs-justified-home" aria-selected="true"
+                @focus="handleFocus" @blur="handleBlur">
                 Apple Pay
                 <div v-show="isFocused" class="product-variation__tick">
-                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0" class="shopee-svg-icon icon-tick-bold">
+                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0"
+                    class="shopee-svg-icon icon-tick-bold">
                     <g>
-                      <path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
+                      <path
+                        d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                      </path>
                     </g>
                   </svg>
                 </div>
               </button>
             </li>
             <li class="nav-item">
-              <button
-                  type="button"
-                  class="nav-link product-variation"
-                  role="tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#navs-justified-profile"
-                  aria-controls="navs-justified-profile"
-                  aria-selected="false"
-                  @focus="handleFocus2"
-                  @blur="handleBlur2"
-              >
+              <button type="button" class="nav-link product-variation" role="tab" data-bs-toggle="tab"
+                data-bs-target="#navs-justified-profile" aria-controls="navs-justified-profile" aria-selected="false"
+                @focus="handleFocus2" @blur="handleBlur2">
                 Ví ShopeePay
                 <div v-show="isFocused2" class="product-variation__tick">
-                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0" class="shopee-svg-icon icon-tick-bold">
+                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0"
+                    class="shopee-svg-icon icon-tick-bold">
                     <g>
-                      <path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
+                      <path
+                        d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                      </path>
                     </g>
                   </svg>
                 </div>
               </button>
             </li>
             <li class="nav-item">
-              <button
-                  type="button"
-                  class="nav-link product-variation"
-                  role="tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#navs-justified-messages"
-                  aria-controls="navs-justified-messages"
-                  aria-selected="false"
-                  @focus="handleFocus3"
-                  @blur="handleBlur3"
-              >
+              <button type="button" class="nav-link product-variation" role="tab" data-bs-toggle="tab"
+                data-bs-target="#navs-justified-messages" aria-controls="navs-justified-messages" aria-selected="false"
+                @focus="handleFocus3" @blur="handleBlur3">
                 Thẻ Tín dụng/Ghi nợ
                 <div v-show="isFocused3" class="product-variation__tick">
-                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0" class="shopee-svg-icon icon-tick-bold">
+                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0"
+                    class="shopee-svg-icon icon-tick-bold">
                     <g>
-                      <path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
+                      <path
+                        d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                      </path>
                     </g>
                   </svg>
                 </div>
               </button>
             </li>
             <li class="nav-item">
-              <button
-                  type="button"
-                  class="nav-link product-variation"
-                  role="tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#ttknh"
-                  aria-controls="navs-justified-messages"
-                  aria-selected="false"
-                  @focus="handleFocus4"
-                  @blur="handleBlur4"
-              >
+              <button type="button" class="nav-link product-variation" role="tab" data-bs-toggle="tab"
+                data-bs-target="#ttknh" aria-controls="navs-justified-messages" aria-selected="false"
+                @focus="handleFocus4" @blur="handleBlur4">
                 Thanh toán khi nhận hàng
                 <div v-show="isFocused4" class="product-variation__tick">
-                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0" class="shopee-svg-icon icon-tick-bold">
+                  <svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0"
+                    class="shopee-svg-icon icon-tick-bold">
                     <g>
-                      <path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path>
+                      <path
+                        d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z">
+                      </path>
                     </g>
                   </svg>
                 </div>
@@ -296,30 +284,30 @@
             </li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane fade show active" id="navs-justified-home" role="tabpanel">
+            <div class="tab-pane fade show" id="navs-justified-home" role="tabpanel">
               <!--nội dung-->
               <div class="pt-1">
                 <div class="_2Ufr+P">
                   <div class="xFYG7Q"></div>
-                    <div class="w-100 flex-1">
-                      <div class="stardust-radio align-items-center stardust-radio--checked" role="radio">
-                        <div class="stardust-radio-button stardust-radio-button--checked">
-                          <div class="stardust-radio-button__outer-circle">
-                            <div class="stardust-radio-button__inner-circle"></div>
-                          </div>
+                  <div class="w-100 flex-1">
+                    <div class="stardust-radio align-items-center stardust-radio--checked" role="radio">
+                      <div class="stardust-radio-button stardust-radio-button--checked">
+                        <div class="stardust-radio-button__outer-circle">
+                          <div class="stardust-radio-button__inner-circle"></div>
                         </div>
-                        <div class="stardust-radio__content">
-                          <div class="d-flex align-items-center ms-3">
-                            <div class="checkout-bank-transfer-item__icon-container">
-                              <img src="../assets/img/apple-pay.png" alt="" class="checkout-bank-transfer-item__icon">
-                            </div>
-                            <div class="CN+b4v">
-                              <div class="-NDhMl">Apple Pay</div>
-                            </div>
+                      </div>
+                      <div class="stardust-radio__content">
+                        <div class="d-flex align-items-center ms-3">
+                          <div class="checkout-bank-transfer-item__icon-container">
+                            <img src="../assets/img/ic_apple_pay.png" alt="" class="checkout-bank-transfer-item__icon">
+                          </div>
+                          <div class="CN+b4v">
+                            <div class="-NDhMl">Apple Pay</div>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -327,8 +315,12 @@
               <div class="pt-1">
                 <div class="checkout-payment-setting__banners">
                   <div class="channel-banner channel-banner__single" style="background-color: rgb(238, 77, 45);">
-                    <div class="channel-banner__icon" style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lncty86bh7cq30&quot;)"></div>
-                    <div class="channel-banner__logo" style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lncty6zl7qey8c&quot;);"></div>
+                    <div class="channel-banner__icon"
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lncty86bh7cq30&quot;)">
+                    </div>
+                    <div class="channel-banner__logo"
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lncty6zl7qey8c&quot;);">
+                    </div>
                     <div class="channel-banner__main-desc">
                       <div class="channel-banner__sub-desc">
                         <span class="channel-promotion__discount-title fw-normal">Giảm ngay </span>
@@ -368,8 +360,7 @@
                   <div class="checkout-payment-method-view__current-title">Chọn thẻ
                     <div class="w-100 flex-1 ms-2">
                       <button class="stardust-button py-2">
-                        <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" role="img"
-                             class="stardust-icon mx-2">
+                        <svg enable-background="new 0 0 10 10" viewBox="0 0 10 10" role="img" class="stardust-icon mx-2">
                           <path stroke="none" d="m10 4.5h-4.5v-4.5h-1v4.5h-4.5v1h4.5v4.5h1v-4.5h4.5z"></path>
                         </svg>
                         Thẻ khác
@@ -379,10 +370,9 @@
                 </div>
                 <!--thẻ ngân hàng-->
                 <div class="checkout-payment-setting__promotions">
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(0, 70, 255);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(0, 70, 255);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7qukw-ljxntozsikz8ec&quot;);">
+                      style="background-image: url(data:image/png;base64,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);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -391,10 +381,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ400.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(24, 98, 175);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(24, 98, 175);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/b0badd89398ddace65609ca86c4bb41a&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/b0badd89398ddace65609ca86c4bb41a&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -403,10 +392,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn bất kỳ - Mỗi ngày trong tuần</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(0, 107, 104)">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(0, 107, 104)">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/ec6e5963e33a360e2de5be5ac46ab2c9&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/ec6e5963e33a360e2de5be5ac46ab2c9&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -415,10 +403,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ700.000 - Mỗi ngày trong tuần</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(236, 31, 39);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(236, 31, 39);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/af2f5ace8a0dbce9577fd9cdb3ff3f59&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/af2f5ace8a0dbce9577fd9cdb3ff3f59&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -427,10 +414,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ400.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(92, 46, 136);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(92, 46, 136);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-llesa790620m5d&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-llesa790620m5d&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -439,10 +425,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ500.000 - Mỗi thứ 6, 7, chủ nhật</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(134, 79, 16);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(134, 79, 16);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/sg-11134004-7qvfk-lh4ncvdisop8fb&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/sg-11134004-7qvfk-lh4ncvdisop8fb&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -452,9 +437,9 @@
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ350.000 - Mỗi ngày trong tuần</div>
                   </div>
                   <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(175, 26, 113);">
+                    style="background-color: rgb(175, 26, 113);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(https://images.viblo.asia/ae87b957-f016-45c0-9c29-34b34a9b3262.png);">
+                      style="background-image: url(https://images.viblo.asia/ae87b957-f016-45c0-9c29-34b34a9b3262.png);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -464,9 +449,9 @@
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ500.000 - Mỗi ngày</div>
                   </div>
                   <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(135, 209, 220);">
+                    style="background-color: rgb(135, 209, 220);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lmx490bmkw67b1&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-lmx490bmkw67b1&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -475,10 +460,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ500.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(227, 25, 51);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(227, 25, 51);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/f6dc90fcac3a823fec5ec3bf4906bf47&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/f6dc90fcac3a823fec5ec3bf4906bf47&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -487,10 +471,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ500.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(0, 114, 188);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(0, 114, 188);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-llesuw8fz1yud7&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/vn-11134004-7r98o-llesuw8fz1yud7&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -499,10 +482,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ500.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(0, 93, 152);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(0, 93, 152);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/f65c401b233cbb13cecb2ed13d264c8f&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/f65c401b233cbb13cecb2ed13d264c8f&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -511,10 +493,9 @@
                     </div>
                     <div class="text-white" style="font-size: .75rem">Đơn từ đ400.000 - Mỗi ngày</div>
                   </div>
-                  <div class="channel-promotion channel-promotion--clickable"
-                       style="background-color: rgb(0, 80, 47);">
+                  <div class="channel-promotion channel-promotion--clickable" style="background-color: rgb(0, 80, 47);">
                     <div class="channel-promotion__bank-logo"
-                         style="background-image: url(&quot;https://cf.shopee.vn/file/977432da06a04e47fd796fb0efa556f8&quot;);">
+                      style="background-image: url(&quot;https://cf.shopee.vn/file/977432da06a04e47fd796fb0efa556f8&quot;);">
                       <div class="channel-promotion__triangle"></div>
                     </div>
                     <div class="channel-promotion__discount-info d-flex align-items-center">
@@ -526,8 +507,16 @@
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show active" id="ttknh" role="tabpanel">
-
+            <div class="tab-pane fade show" id="ttknh" role="tabpanel">
+              <div class="a4HuAa">
+                <div class="zQJS7A">
+                  <div class="_1QXmDV">Thanh toán khi nhận hàng</div>
+                  <div class="MS8Bxg">
+                    <div class="ksuWLG">Phí thu hộ: ₫0 VNĐ. Ưu đãi về phí vận chuyển (nếu có) áp dụng cả với phí thu hộ.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -535,11 +524,11 @@
     </div>
     <div class="KQyCj0">
       <h3 class="bwwaGp iL6wsx BcITa9">Tổng tiền hàng</h3>
-      <div class="bwwaGp R3a05f BcITa9">₫15.000</div>
+      <div class="bwwaGp R3a05f BcITa9">₫{{ formatPrice(totalPriceAll()) }}</div>
       <h3 class="bwwaGp iL6wsx RY9Grr">Phí vận chuyển</h3>
-      <div class="bwwaGp R3a05f RY9Grr">₫31.200</div>
+      <div class="bwwaGp R3a05f RY9Grr">đ{{ formatPrice(shippingPrice) }}</div>
       <h3 class="bwwaGp iL6wsx _5y8V6a">Tổng thanh toán:</h3>
-      <div class="bwwaGp l2Nmnm R3a05f _5y8V6a">₫346.200</div>
+      <div class="bwwaGp l2Nmnm R3a05f _5y8V6a">₫{{ formatPrice(totalPriceAll() + shippingPrice) }}</div>
       <div class="uTFqRt">
         <div class="k4VpYA">
           <div class="C-NSr-">
@@ -547,7 +536,9 @@
             <a href="https://help.shopee.vn/portal/article/77242" class="text-decoration-none">Điều khoản Shopee</a>
           </div>
         </div>
-        <button class="stardust-button stardust-button--primary stardust-button--large apLZEG">Đặt hàng</button>
+        <router-link :to="{ name: 'user' }" class="text-decoration-none">
+          <button class="stardust-button stardust-button--primary stardust-button--large apLZEG">Đặt hàng</button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -560,17 +551,10 @@
           <h5 class="text-body-tertiary p-3" style="border-bottom: 1px solid #ccc">Địa chỉ của tôi</h5>
           <!--content-->
           <div>
-            <div
-                v-for="(address, index) in addresses"
-                :key="index"
-                class="d-flex QsXnat"
-                @click="handleAddressClick(address)"
-            >
-              <i
-                  class="bi bi-record-circle fs-5"
-                  :style="{ color: address.isActive ? '#ee4d2d' : '#ccc' }"
-                  style="cursor: pointer; padding: 0 10px 0 0;"
-              ></i>
+            <div v-for="(address, index) in addresses" :key="index" class="d-flex QsXnat"
+              @click="handleAddressClick(address)">
+              <i class="bi bi-record-circle fs-5" :style="{ color: address.isActive ? '#ee4d2d' : '#ccc' }"
+                style="cursor: pointer; padding: 0 10px 0 0;"></i>
               <div class="oz79Fh">
                 <div role="heading" class="b3Bzag HN9LCm">
                   <div id="address-card_c987cf95-913c-4dfa-a2cc-eb4f393c3547_header" class="rfuUdM sOgNxc">
@@ -601,7 +585,7 @@
             <svg viewBox="0 0 10 10" class="WWYAjA">
               <path stroke="none" d="m10 4.5h-4.5v-4.5h-1v4.5h-4.5v1h4.5v4.5h1v-4.5h4.5z"></path>
             </svg>
-<!--            Thêm Địa Chỉ Mới-->
+            <!--            Thêm Địa Chỉ Mới-->
             <AddNewAddressModal />
           </button>
           <div class="d-flex mt-5 pt-5 justify-content-end">
@@ -614,61 +598,131 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import VoucherModal from './modal/VoucherPopover.vue';
 import ShippingUnit from './modal/ShippingUnit.vue';
 import VoucherShopee from './modal/VoucherShopee.vue';
-import AddNewAddressModal from './modal/AddNewAddressModal.vue'
+import AddNewAddressModal from './modal/AddNewAddressModal.vue';
 
-import {ref} from 'vue';
+import { ref } from 'vue';
 
-const isOpen = ref(false);
+export default {
+  props: {
+    totalPrice: Number,
+  },
+  components: {
+    VoucherModal,
+    ShippingUnit,
+    VoucherShopee,
+    AddNewAddressModal,
+  },
+  data() {
+    return {
+      shippingPrice: 0,
+      isCalculating: true,
+      isOpen: ref(false),
+      isFocused: ref(false),
+      isFocused2: ref(false),
+      isFocused3: ref(false),
+      isFocused4: ref(false),
+      addresses: [
+        { name: 'Hoàng Phúc', phone: '(+84) 939745028', address: '105/B Hưng Phú, Cái Răng, Ninh Kiều, Tp. Cần Thơ', isActive: true },
+        { name: 'Anh Thương', phone: '(+84) 939745028', address: '123/A Trần Hoàng Na, Ninh Kiều, Tp. Cần Thơ', isActive: false },
+      ],
+    };
+  },
 
-const isFocused = ref(false);
-const isFocused2 = ref(false);
-const isFocused3 = ref(false);
-const isFocused4 = ref(false);
+  computed: {
+    cartItems() {
+      const pay = this.$store.getters.cartItems || [];
+      console.log('trong pay', pay);
+      return pay;
+    },
 
-//
-const addresses = ref([
-  { name: 'Hoàng Phúc', phone: '(+84) 939745028', address: '105/B Hưng Phú, Cái Răng, Ninh Kiều, Tp. Cần Thơ', isActive: true },
-  { name: 'Anh Thương', phone: '(+84) 939745028', address: '123/A Trần Hoàng Na, Ninh Kiều, Tp. Cần Thơ', isActive: false },
-]);
+    totalPrice() {
+      const cartItems = this.$store.getters.cartItems;
+      if (!cartItems) return 0;
+      return cartItems.reduce((acc, product) => acc + product.price * product.qty, 0);
+    }
+  },
 
-const handleAddressClick = (selectedAddress) => {
-  addresses.value.forEach((address) => {
-    address.isActive = address === selectedAddress;
-  });
+  methods: {
+    formatPrice(price) {
+      const formatter = new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+      });
+      return formatter.format(price).replace('₫', '');
+    },
+
+    totalPriceAll() {
+      if (!this.cartItems) return 0;
+
+      const totalPrices = [];
+      for (const cartItem of this.cartItems) {
+        totalPrices.push(cartItem.price * cartItem.qty);
+      }
+      // Tính tổng giá của tất cả đơn hàng
+      return totalPrices.reduce((acc, price) => acc + price, 0);
+    },
+
+    handleAddToCartWithShipping(shippingPrice) {
+      // Cập nhật giá vận chuyển
+      this.shippingPrice = parseFloat(shippingPrice.replace('₫', '').replace(',', ''));
+    },
+
+    handleAddressClick(selectedAddress) {
+      this.addresses.forEach((address) => {
+        address.isActive = address === selectedAddress;
+      });
+    },
+    handleFocus() {
+      this.isFocused = true;
+    },
+    handleBlur() {
+      this.isFocused = false;
+    },
+    handleFocus2() {
+      this.isFocused2 = true;
+    },
+    handleBlur2() {
+      this.isFocused2 = false;
+    },
+    handleFocus3() {
+      this.isFocused3 = true;
+    },
+    handleBlur3() {
+      this.isFocused3 = false;
+    },
+    handleFocus4() {
+      this.isFocused4 = true;
+    },
+    handleBlur4() {
+      this.isFocused4 = false;
+    },
+
+    goToUser() {
+      const totalPrice = this.totalPrice;
+      this.$router.push({ name: '/user', params: { totalPrice } });
+    },
+
+    //thanh toán momo
+    async placeOrder() {
+      const momoApiUrl = 'URL_API_MOMO'; // Thay thế bằng URL API Momo của bạn
+      const response = await axios.post(momoApiUrl, {
+        // Truyền thông tin đơn hàng, tổng giá trị, v.v.
+      });
+
+      // Kiểm tra xem có link thanh toán hay không
+      if (response.data && response.data.payUrl) {
+        // Chuyển hướng người dùng đến trang thanh toán Momo
+        window.location.href = response.data.payUrl;
+      } else {
+        console.error('Không nhận được link thanh toán từ Momo.');
+      }
+    },
+  },
 };
-
-const handleFocus = () => {
-  isFocused.value = true;
-};
-
-const handleBlur = () => {
-  isFocused.value = false;
-};
-const handleFocus2 = () => {
-  isFocused2.value = true;
-};
-
-const handleBlur2 = () => {
-  isFocused2.value = false;
-};
-const handleFocus3 = () => {
-  isFocused3.value = true;
-};
-
-const handleBlur3 = () => {
-  isFocused3.value = false;
-};
-const handleFocus4 = () => {
-  isFocused4.value = true;
-};
-
-const handleBlur4 = () => {
-  isFocused4.value = false;
-}
 </script>
 
 <style scoped>
@@ -677,9 +731,11 @@ const handleBlur4 = () => {
   margin-left: auto;
   width: 100%;
 }
-.flex-1{
+
+.flex-1 {
   flex: 1;
 }
+
 .stardust-checkbox__input {
   user-select: none;
   cursor: not-allowed;
@@ -1224,7 +1280,8 @@ button.elfp9W.div-style {
   align-items: center;
 }
 
-._9evL72, .EGXRIm {
+._9evL72,
+.EGXRIm {
   grid-column-start: 1;
   grid-column-end: 5;
   -ms-grid-column-span: 4;
@@ -1300,7 +1357,9 @@ h3.bwwaGp.iL6wsx {
   -ms-grid-column-span: 1;
 }
 
-.OX-2Lj h1, .OX-2Lj h2, .OX-2Lj h3 {
+.OX-2Lj h1,
+.OX-2Lj h2,
+.OX-2Lj h3 {
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -1319,7 +1378,8 @@ h3.bwwaGp.iL6wsx {
   grid-row-end: 12;
 }
 
-.BcITa9, .GJEkd- {
+.BcITa9,
+.GJEkd- {
   -ms-grid-row-span: 1;
 }
 
@@ -1454,7 +1514,7 @@ h3.bwwaGp.iL6wsx {
   align-items: center;
 }
 
-.modal > div {
+.modal>div {
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 3px;
@@ -1525,7 +1585,8 @@ h3.bwwaGp.iL6wsx {
   display: inline-flex;
 }
 
-._6MOlMb, ._9rN-3o {
+._6MOlMb,
+._9rN-3o {
   align-items: center;
 }
 
@@ -1534,7 +1595,8 @@ h3.bwwaGp.iL6wsx {
   margin: 0 8px;
 }
 
-._0pkIbi, .UfDIlr {
+._0pkIbi,
+.UfDIlr {
   font-size: .875rem;
   line-height: 1.25rem;
 }
@@ -1547,7 +1609,8 @@ h3.bwwaGp.iL6wsx {
   white-space: nowrap;
 }
 
-._6MOlMb, ._9rN-3o {
+._6MOlMb,
+._9rN-3o {
   align-items: center;
 }
 
@@ -1559,7 +1622,10 @@ h3.bwwaGp.iL6wsx {
   justify-content: flex-end;
 }
 
-._6MOlMb, ._7oOQ\+Z, .HN9LCm, .sOgNxc {
+._6MOlMb,
+._7oOQ\+Z,
+.HN9LCm,
+.sOgNxc {
   display: flex;
 }
 
@@ -1572,8 +1638,10 @@ h3.bwwaGp.iL6wsx {
   white-space: nowrap;
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
-  -webkit-appearance: button;
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   cursor: pointer;
 }
 
@@ -1582,7 +1650,8 @@ button, html input[type=button], input[type=reset], input[type=submit] {
   line-height: 1.25rem;
 }
 
-.GeOdQ1, .UnzFoC {
+.GeOdQ1,
+.UnzFoC {
   color: rgba(0, 0, 0, .54);
 }
 
@@ -1679,9 +1748,11 @@ svg:not(:root) {
   align-items: center;
   justify-content: center;
 }
-.product-variation:focus{
+
+.product-variation:focus {
   border: 1px solid #ee4d2d;
 }
+
 .product-variation__tick {
   width: 0.9375rem;
   height: 0.9375rem;
@@ -1690,14 +1761,16 @@ svg:not(:root) {
   right: 0;
   bottom: 0;
 }
+
 .product-variation__tick:before {
   border: 0.9375rem solid transparent;
-  border-bottom: 0.9375rem solid var(--brand-primary-color,#ee4d2d);
+  border-bottom: 0.9375rem solid var(--brand-primary-color, #ee4d2d);
   content: "";
   position: absolute;
   right: -0.9375rem;
   bottom: 0;
 }
+
 .product-variation__tick>.icon-tick-bold {
   position: absolute;
   right: 0;
@@ -1705,6 +1778,7 @@ svg:not(:root) {
   color: #fff;
   font-size: 8px;
 }
+
 .product-variation__tick>.icon-tick-bold {
   position: absolute;
   right: 0;
@@ -1712,6 +1786,7 @@ svg:not(:root) {
   color: #fff;
   font-size: 8px;
 }
+
 .product-variation__tick>.icon-tick-bold {
   position: absolute;
   right: 0;
@@ -1719,9 +1794,11 @@ svg:not(:root) {
   color: #fff;
   font-size: 8px;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
+
 .shopee-svg-icon {
   display: inline-block;
   width: 1em;
@@ -1729,36 +1806,43 @@ svg:not(:root) {
   fill: currentColor;
   position: relative;
 }
+
 ._2Ufr\+P {
   display: flex;
   padding: 0 30px;
   box-sizing: border-box;
 }
+
 ._2Ufr\+P .xFYG7Q {
   font-size: 1.125rem;
   width: 12.5rem;
   color: #222;
 }
+
 ._2Ufr\+P .\-6\+lVf .kFAX99 .stardust-radio {
   cursor: pointer;
   padding-top: 0;
 }
+
 .stardust-radio {
-  font-family: -apple-system,Helvetica Neue,Helvetica,Roboto,Droid Sans,Arial,sans-serif;
+  font-family: -apple-system, Helvetica Neue, Helvetica, Roboto, Droid Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(0,0,0,.87);
+  color: rgba(0, 0, 0, .87);
   display: flex;
   cursor: pointer;
   padding: 16px 12px;
 }
+
 .OX-2Lj .stardust-radio-button {
   align-self: center;
 }
+
 .OX-2Lj .stardust-radio-button {
   padding-top: 3px;
   margin-right: 0.625rem;
 }
+
 .stardust-radio-button {
   margin-right: 8px;
   flex-shrink: 0;
@@ -1766,26 +1850,31 @@ svg:not(:root) {
   width: 18px;
   height: 18px;
 }
+
 .stardust-radio-button__outer-circle {
   width: 18px;
   height: 18px;
   border-radius: 100%;
-  border: 2px solid rgba(0,0,0,.26);
+  border: 2px solid rgba(0, 0, 0, .26);
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
+
 .stardust-radio-button--checked .stardust-radio-button__outer-circle {
   border-color: #ee4d2d;
 }
+
 .OX-2Lj .stardust-radio-button__outer-circle {
   border-width: 1px;
-  border-color: rgba(0,0,0,.14);
+  border-color: rgba(0, 0, 0, .14);
 }
+
 .OX-2Lj .stardust-radio-button--checked .stardust-radio-button__inner-circle {
   background-color: #fff;
 }
+
 .stardust-radio-button__outer-circle>.stardust-radio-button__inner-circle {
   width: 6px;
   height: 6px;
@@ -1793,19 +1882,23 @@ svg:not(:root) {
   background: #ee4d2d;
   opacity: 1;
 }
+
 .stardust-radio__content {
   cursor: pointer;
 }
+
 .checkout-bank-transfer-item__icon-container {
   flex: 0 0 2.8125rem;
 }
+
 .checkout-bank-transfer-item__icon {
   width: 2.8125rem;
   height: 2.8125rem;
   object-fit: scale-down;
   border-radius: 2px;
-  border: 1px solid rgba(0,0,0,.14);
+  border: 1px solid rgba(0, 0, 0, .14);
 }
+
 .CN\+b4v {
   display: flex;
   flex-direction: column;
@@ -1814,22 +1907,28 @@ svg:not(:root) {
   min-height: 2.5rem;
   justify-content: center;
 }
+
 .-NDhMl {
   flex: 0 1 auto;
 }
+
 .checkout-payment-setting__banners {
   padding: 0.9375rem 0;
   margin: 0 1.875rem 0.9375rem;
-  border-bottom: 0.0625rem dashed rgba(0,0,0,.09);
+  border-bottom: 0.0625rem dashed rgba(0, 0, 0, .09);
 }
+
 .checkout-payment-setting__banners .channel-banner {
   margin: 0.625rem 0.625rem 0 0;
 }
-.channel-banner, .channel-banner__icon {
+
+.channel-banner,
+.channel-banner__icon {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .channel-banner {
   position: relative;
   max-width: 23.75rem;
@@ -1842,6 +1941,7 @@ svg:not(:root) {
   float: left;
   overflow: hidden;
 }
+
 .channel-banner__icon {
   position: absolute;
   top: 0;
@@ -1849,6 +1949,7 @@ svg:not(:root) {
   width: 1.5625rem;
   height: 2rem;
 }
+
 .channel-banner__logo {
   position: absolute;
   top: 0.0625rem;
@@ -1860,7 +1961,9 @@ svg:not(:root) {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.channel-banner__main-desc, .channel-banner__sub-desc {
+
+.channel-banner__main-desc,
+.channel-banner__sub-desc {
   margin-left: 1.875rem;
   margin-top: 0.3125rem;
   white-space: pre-wrap;
@@ -1873,50 +1976,62 @@ svg:not(:root) {
   font-weight: 200;
   font-size: 1.25rem;
 }
+
 .channel-promotion__discount-title {
   font-size: 1.25rem;
   color: #fff;
 }
+
 .channel-banner__sub-desc {
   padding-right: 1.5625rem;
   font-size: .75rem;
   max-height: 1.75rem;
 }
+
 .checkout-payment-setting__banners:after {
   content: "";
   clear: both;
   display: table;
 }
+
 .bank-transfer-category:last-child {
   padding-bottom: 1.875rem;
 }
+
 .bank-transfer-category {
   display: flex;
   padding: 0 1.875rem;
   box-sizing: border-box;
 }
+
 .checkout-bank-transfer-item--disabled .stardust-radio {
   cursor: not-allowed;
 }
+
 .checkout-bank-transfer-item>.stardust-radio {
   cursor: pointer;
   padding-top: 0;
   align-items: center;
 }
+
 .OX-2Lj .stardust-radio-button {
   align-self: center;
 }
+
 .OX-2Lj .stardust-radio-button {
   padding-top: 3px;
   margin-right: 0.625rem;
 }
+
 .OX-2Lj .stardust-radio-button__outer-circle {
   border-width: 1px;
-  border-color: rgba(0,0,0,.14);
+  border-color: rgba(0, 0, 0, .14);
 }
+
 .checkout-bank-transfer-item--disabled .stardust-radio-button__outer-circle {
   background-color: #ebebeb;
 }
+
 .checkout-bank-transfer-item__main {
   display: flex;
   flex-direction: column;
@@ -1925,35 +2040,42 @@ svg:not(:root) {
   min-height: 2.5rem;
   justify-content: center;
 }
+
 .credit-card-subcategory {
   display: flex;
   padding: 1.875rem;
   box-sizing: border-box;
   position: relative;
 }
+
 .OX-2Lj .stardust-button svg {
   fill: #555;
   margin-right: 10px;
 }
+
 .stardust-icon {
   stroke: currentColor;
   fill: currentColor;
   width: 1em;
   height: 1em;
 }
+
 .checkout-payment-setting__promotions {
   padding-top: 0.3125rem;
   padding-bottom: 0.9375rem;
   margin-left: 13.75rem;
-  border-top: 0.0625rem dashed rgba(0,0,0,.09);
+  border-top: 0.0625rem dashed rgba(0, 0, 0, .09);
 }
+
 .checkout-payment-setting__promotions .channel-promotion {
   float: left;
   margin: 0.625rem 0.625rem 0 0;
 }
+
 .channel-promotion--clickable {
   cursor: pointer;
 }
+
 .channel-promotion {
   width: 16.75rem;
   height: 4.875rem;
@@ -1963,6 +2085,7 @@ svg:not(:root) {
   padding: 0.225rem;
   float: left;
 }
+
 .channel-promotion__bank-logo {
   position: absolute;
   top: 0.125rem;
@@ -1975,6 +2098,7 @@ svg:not(:root) {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .channel-promotion__triangle {
   position: absolute;
   width: 0;
@@ -1984,5 +2108,27 @@ svg:not(:root) {
   border-color: transparent #fff transparent transparent;
   border-style: solid;
   border-width: 0 0.625rem 1.875rem 0;
+}
+.a4HuAa {
+    padding: 1.75rem 1.875rem;
+}
+.zQJS7A {
+    display: flex;
+    flex-direction: row;
+}
+._1QXmDV, .ksuWLG {
+    font-size: .875rem;
+    line-height: 1rem;
+}
+._1QXmDV {
+    width: 12.5rem;
+}
+.MS8Bxg {
+    display: flex;
+    flex-direction: column;
+}
+._1QXmDV, .ksuWLG {
+    font-size: .875rem;
+    line-height: 1rem;
 }
 </style>

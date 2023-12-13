@@ -9,13 +9,14 @@
     <div class="home-page-f-01">
       <div class="row home-page-f01-row">
         <div class="home-page-f01-col" v-for="(product, index) in products.data" :key="index">
-          <router-link :to="{ name: 'productDetail', params: { slug: product.slug }  }" class="text-decoration-none">
+          <router-link :to="{ name: 'productDetail', params: { slug: product.slug } }" class="text-decoration-none">
             <div class="card home-page-f01-card">
               <div class="home-page-f01-card-img">
                 <div class="home-page-f01-background">
                   <img width="188.4000px" height="188.400px" class="d-block w-100" src="../assets/img/background-1.png">
                 </div>
-                <img class="card-img-top" src="../assets/img/item-27.jpeg" alt="Card image" style="width: 188.400px;">  <!-- hình ảnh -->
+                <img class="card-img-top" src="../assets/img/item-27.jpeg" alt="Card image" style="width: 188.400px;">
+                <!-- hình ảnh -->
                 <div class="home-page-f01-card-img-favorite">
                   <div class="home-page-f01-card-img-favorite-a">
                     <span class="home-page-f01-card-img-favorite-b">Yêu thích</span>
@@ -54,7 +55,7 @@
           Bớt</a>
       </div>
     </div>
-    
+
   </div>
 </template>
 
@@ -66,6 +67,7 @@ export default {
     return {
       products: [],
       productDetail: [],
+      productMedia: {},
     };
   },
   mounted() {
@@ -75,18 +77,21 @@ export default {
     fetchAPI() {
       const apiPromise = axios.get('/api/product')
       const apiPromise2 = axios.get('/api/product-detail')
+      const apiPromise3 = axios.get('/api/product-media');
 
-      Promise.all([apiPromise, apiPromise2])
+      Promise.all([apiPromise, apiPromise2, apiPromise3])
         .then(response => {
           this.products = response[0].data;
+          console.log(this.products);
           this.productDetail = response[1].data;
-          this.handleProduct(this.products, this.productDetail)
+          this.productMedia = response[2].data;
+          this.handleProduct(this.products, this.productDetail, this.productMedia)
         })
         .catch(error => {
           console.error('Error fetching data:', error)
         });
     },
-    handleProduct(products, productDetail) {
+    handleProduct(products, productDetail, productMedia) {
       Object.entries(products).forEach(([keyOne, valueOne]) => {
         if (keyOne == 'data') {
           Object.entries(valueOne).forEach(([keyTwo, valueTwo]) => {

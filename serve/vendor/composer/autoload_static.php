@@ -121,8 +121,8 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -287,7 +287,7 @@ class ComposerStaticInit0755c5df2512bc36fb41b4737914a001
         ),
         'Illuminate\\' => 
         array (
-            0 => 'D:\\du_an_1\\DU_AN_1_VUE\\serve\\vendor',
+            0 => 'C:\\xampp\\htdocs\\DU_AN_1_VUE\\serve\\vendor',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
