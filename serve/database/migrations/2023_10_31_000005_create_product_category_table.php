@@ -19,6 +19,7 @@ class Product_Category implements Migration
             $table->string('category_name');
             $table->timestamps();
             $table->softDeletes();
+            $table->foreignId('parent_category_id', 'product_category');
         });
     }
 
@@ -29,5 +30,4 @@ class Product_Category implements Migration
     {
         Schema::dropIfExists('product_category');
     }
-
 }

@@ -15,13 +15,13 @@ class Role implements Migration
     {
         Schema::create('role', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id');
-            $table->string('name');
+            $table->integer('site_user_id');
+            $table->string('name_role');
             $table->text('description');
             $table->json('permission');
             $table->timestamps();
             $table->softDeletes();
-            $table->foreignId('user_id', 'site_user');
+            $table->foreignId('site_user_id', 'site_user');
         });
     }
 

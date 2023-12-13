@@ -15,6 +15,8 @@ class Product implements Migration
     {
         Schema::create('product', function (Blueprint $table) {
             $table->id();
+            $table->integer('site_user_id');
+            $table->integer('agency_id');
             $table->string('name');
             $table->string('slug');
             $table->text('description');
@@ -22,6 +24,8 @@ class Product implements Migration
             $table->timestamps();
             $table->softDeletes();
             $table->foreignId('product_category_id', 'product_category');
+            $table->foreignId('site_user_id', 'site_user');
+            $table->foreignId('agency_id', 'agency');
         });
     }
 
@@ -32,5 +36,4 @@ class Product implements Migration
     {
         Schema::dropIfExists('product');
     }
-
 }

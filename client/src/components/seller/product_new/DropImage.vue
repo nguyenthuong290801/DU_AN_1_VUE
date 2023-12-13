@@ -6,7 +6,7 @@
       @click="triggerFileInput"
       v-if="isDrop"
   >
-    <i class="bi bi-image-fill fs-1 text-danger"></i>
+    <i class="bi bi-image-fill fs-1" style="color: #EE4D2D;"></i>
     Hình ảnh
     <span>({{ this.qty }} ảnh tối đa)</span>
   </div>

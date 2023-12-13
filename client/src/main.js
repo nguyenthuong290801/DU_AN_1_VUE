@@ -16,9 +16,22 @@ import '@splidejs/vue-splide/css';
 import 'bootstrap';
 import store from './store';
 
-const savedIsAuth = localStorage.getItem('isAuth');
-if (savedIsAuth) {
-    store.commit('updateAuthStatus', savedIsAuth === 'true');
+const savedIsCustomer = localStorage.getItem('isCustomer');
+const savedIsSeller = localStorage.getItem('isSeller');
+const savedIsAdmin = localStorage.getItem('isAdmin');
+
+if (savedIsCustomer) {
+    store.commit('checkAuth', 'customer');
+} else {
+    store.commit('checkAuth', 'customer');
+}
+
+if (savedIsSeller) {
+    store.commit('checkAuth', 'seller');
+}
+
+if (savedIsAdmin) {
+    store.commit('checkAuth', 'admin');
 }
 
 const app = createApp(App)

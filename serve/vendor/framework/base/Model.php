@@ -186,6 +186,21 @@ class Model implements ModelInterface
 
     public function updateFor($id, array $dataArray)
     {
+        $columns = '';
+        foreach ($dataArray as $key => $value) {
+            $columns .= "$key = :$key, ";
+        }
+        $columns = rtrim($columns, ', ');
+
+        $query = "UPDATE {$this->table} SET $columns WHERE id = :id";
+        $data['id'] = $id;
+
+        $stmt = $this->pdo->prepare($query);
+        for ($i = 0; $i < count($dataArray); $i++) {
+            $stmt->execute($data);
+        }
+
+        return $stmt->rowCount();
     }
 
     function slug($text)

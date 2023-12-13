@@ -1,16 +1,16 @@
 <template>
   <aside class="is-open">
-    <div class="sidebar-content">
+    <!-- <div class="sidebar-content">
       <div @click="toggleSection('shipping')" class="bg-light rounded p-2 box-shadow">
         <i class="bi bi-box2"></i>
         <span class="mx-2">Vận Chuyển</span>
       </div>
       <ul v-show="openSections.shipping">
         <li><router-link to="#">Quản Lý Vận Chuyển</router-link></li>
-        <li><router-link to="/portal/setting/transport">Cài Đặt Vận Chuyển</router-link></li>
+        <li><router-link to="/portal/seller/setting/transport">Cài Đặt Vận Chuyển</router-link></li>
       </ul>
-    </div>
-    <div class="sidebar-content">
+    </div> -->
+    <!-- <div class="sidebar-content">
       <div @click="toggleSection('orders')" class="bg-light rounded p-2 box-shadow">
         <i class="bi bi-receipt-cutoff"></i>
         <span class="mx-2">Quản Lý Đơn Hàng</span>
@@ -20,16 +20,16 @@
         <li><router-link to="#">Đơn Hủy</router-link></li>
         <li><router-link to="#">Trả Hàng/Hoàn Tiền</router-link></li>
       </ul>
-    </div>
+    </div> -->
     <div class="sidebar-content">
       <div @click="toggleSection('products')" class="bg-light rounded p-2 box-shadow">
         <i class="bi bi-bag"></i>
         <span class="mx-2">Quản Lý Sản Phẩm</span>
       </div>
       <ul v-show="openSections.products">
-        <li><router-link to="/portal/product/list/all">Tất Cả Sản Phẩm</router-link></li>
-        <li><router-link to="/portal/product/new">Thêm Sản Phẩm</router-link></li>
-        <li><router-link to="#">Sản Phẩm Vi Phạm</router-link></li>
+        <li><router-link to="/portal/seller/product/list/all">Tất Cả Sản Phẩm</router-link></li>
+        <li><router-link to="/portal/seller/product/new">Thêm Sản Phẩm</router-link></li>
+        <!-- <li><router-link to="#">Sản Phẩm Vi Phạm</router-link></li> -->
       </ul>
     </div>
     <!-- <div class="sidebar-content">

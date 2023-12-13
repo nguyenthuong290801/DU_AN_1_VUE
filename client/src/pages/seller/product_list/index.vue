@@ -5,27 +5,27 @@
                 <div class="list">
                     <div class="row border-bottom">
                         <ul class="d-flex gap-5 m-0 px-3">
-                            <li :class="{ 'link-ac': this.$route.path === '/portal/product/list/all' }">
-                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/product/list/all' }"
-                                    to="/portal/product/list/all">Tất cả</router-link>
+                            <li :class="{ 'link-ac': this.$route.path === '/portal/seller/product/list/all' }">
+                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/seller/product/list/all' }"
+                                    to="/portal/seller/product/list/all">Tất cả</router-link>
                             </li>
-                            <li :class="{ 'link-ac': this.$route.path === '/portal/product/list/active' }">
-                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/product/list/active' }"
-                                    to="/portal/product/list/active">Đang hoạt động</router-link>
+                            <li :class="{ 'link-ac': this.$route.path === '/portal/seller/product/list/active' }">
+                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/seller/product/list/active' }"
+                                    to="/portal/seller/product/list/active">Đang hoạt động</router-link>
                             </li>
-                            <li :class="{ 'link-ac': this.$route.path === '/portal/product/list/out-of-stock' }">
+                            <li :class="{ 'link-ac': this.$route.path === '/portal/seller/product/list/out-of-stock' }">
                                 <router-link
-                                    :class="{ 'item-ac': this.$route.path === '/portal/product/list/out-of-stock' }"
-                                    to="/portal/product/list/out-of-stock">Hết hàng</router-link>
+                                    :class="{ 'item-ac': this.$route.path === '/portal/seller/product/list/out-of-stock' }"
+                                    to="/portal/seller/product/list/out-of-stock">Hết hàng</router-link>
                             </li>
-                            <li :class="{ 'link-ac': this.$route.path === '/portal/product/list/pending' }">
-                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/product/list/pending' }"
-                                    to="/portal/product/list/pending">Chờ duyệt</router-link>
+                            <!-- <li :class="{ 'link-ac': this.$route.path === '/portal/seller/product/list/pending' }">
+                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/seller/product/list/pending' }"
+                                    to="/portal/seller/product/list/pending">Chờ duyệt</router-link>
                             </li>
-                            <li :class="{ 'link-ac': this.$route.path === '/portal/product/list/violate' }">
-                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/product/list/violate' }"
-                                    to="/portal/product/list/violate">Vi phạm</router-link>
-                            </li>
+                            <li :class="{ 'link-ac': this.$route.path === '/portal/seller/product/list/violate' }">
+                                <router-link :class="{ 'item-ac': this.$route.path === '/portal/seller/product/list/violate' }"
+                                    to="/portal/seller/product/list/violate">Vi phạm</router-link>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="row d-flex flex-nowrap justify-content-between gap-2 mt-3">
@@ -87,7 +87,7 @@ export default {
         submitProductSearch() {
             const search = slugify(this.search, { separator: '-' })
             this.$router.push({
-                path: `/portal/product/list/all/${search}`
+                path: `/portal/seller/product/list/all/${search}`
             });
         },
         toggleDropdown() {
@@ -140,7 +140,7 @@ export default {
 }
 
 .dropdown-ac {
-    color: #C6303E;
+    color: #EE4D2D;
     font-weight: 500;
 }
 
@@ -186,11 +186,11 @@ li {
 }
 
 .link-ac {
-    border-bottom: 3px solid #C6303E !important;
+    border-bottom: 3px solid #EE4D2D !important;
 }
 
 .item-ac {
-    color: #C6303E !important;
+    color: #EE4D2D !important;
     font-weight: 500;
 }
 </style>

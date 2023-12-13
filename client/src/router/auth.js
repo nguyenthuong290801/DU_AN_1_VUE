@@ -5,6 +5,12 @@ const auth = [
         component: () => import("../layouts/auth.vue"),
         children:[
             {
+                path: "register_to_seller",
+                name: "register_to_seller",
+                component: () => import("../pages/auth/register_to_seller/index.vue"),
+                meta: { pageTitle: "Đăng ký trở thành Người bán Shopee" },
+            },
+            {
                 path: "login",
                 name: "login",
                 component: () => import("../pages/auth/login/index.vue"),

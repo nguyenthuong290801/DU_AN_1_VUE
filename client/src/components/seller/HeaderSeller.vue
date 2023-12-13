@@ -56,7 +56,7 @@
               <router-link to=""><i class="bi bi-grid text-black"></i> Hồ Sơ Shop</router-link>
             </li>
             <li>
-              <router-link to=""><i class="bi bi-arrow-bar-right text-black"></i> Đăng xuất</router-link>
+              <div @click="logout" class="logout"><i class="bi bi-arrow-bar-right text-black"></i> Đăng xuất</div>
             </li>
           </ul>
         </div>
@@ -97,6 +97,10 @@ export default {
       this.$router.push({
                 path: `/portal`
             });
+    },
+    logout() {
+      localStorage.removeItem('isSeller');
+      this.$router.push('/');
     }
   }
 };
@@ -177,6 +181,16 @@ export default {
           padding: 5px;
 
           a {
+            text-decoration: none;
+            color: #757575;
+            white-space: nowrap;
+
+            &:hover {
+              color: #000000;
+            }
+          }
+
+          .logout {
             text-decoration: none;
             color: #757575;
             white-space: nowrap;

@@ -34,7 +34,7 @@ class ApiController extends Controller
         }
 
         $data = '';
-        $data = new Sms($numberPhone, 'Shopee', $message);
+        // $data = new Sms($numberPhone, 'Shopee', $message);
 
         if ($data == 'PENDING') {
             $msg = 'SMS is pending for processing.';
@@ -151,6 +151,19 @@ class ApiController extends Controller
         $Data = json_decode(file_get_contents("php://input"), true);
 
         $user = Model::where('SiteUser', ['phone_number' => $Data['phone_number']]);
+
+        if ($user) {
+            $role = Model::where('Role', ['site_user_id' => $user[0]['id']]);
+            $agency = Model::where('Agency', ['site_user_id' => $user[0]['id']]);
+
+            if (count($role) > 0) {
+                $user[0]['role'] = $role[0]['name_role'];
+            }
+
+            if (count($agency) > 0) {
+                $user[0]['agencyId'] = $agency[0]['id'];
+            }
+        }
 
         if (count($user) > 0) {
             $hashedPassword = $user[0]['password'];

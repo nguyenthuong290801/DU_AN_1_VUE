@@ -3,76 +3,91 @@ import store from '@/store/index.js'
 const seller = [
     {
         path: "/portal",
-        name: "",
+        name: "Cổng thông tin",
         component: () => import("../layouts/seller.vue"),
         beforeEnter: (to, from, next) => {
-            const isAuth = store.state.isAuth;
-            console.log('isAuth:', isAuth);
-            if (isAuth) {
+            const isCustomer = store.state.isCustomer;
+
+            if (isCustomer) {
                 next();
             } else {
-                console.warn('Not authenticated. Redirecting to /buyer/register');
                 next("/buyer/login");
             }
         },
         children: [
             {
-                path: "",
-                name: "Trang chủ",
-                component: () => import("../pages/seller/home/index.vue"),
-            },
-            {
-                path: "setting/transport",
-                name: "Cài đặt vận chuyển",
-                component: () => import("../pages/seller/setting_transport/index.vue"),
-            },
-            {
-                path: "product/new",
-                name: "Thêm sản phẩm",
-                component: () => import("../pages/seller/product_new/index.vue"),
-            },
-            {
-                path: "product/edit/:id",
-                name: "Sửa sản phẩm",
-                component: () => import("../pages/seller/product_edit/index.vue"),
-            },
-            {
-                path: "product/list",
-                name: "Quản lý sản phẩm",
-                component: () => import("../pages/seller/product_list/index.vue"),
+                path: "seller",
+                name: "Người bán hàng",
+                component: () => import("../pages/seller/register_to_seller/index.vue"),
+                beforeEnter: (to, from, next) => {
+                    const isSeller = store.state.isSeller;
+
+                    if (isSeller) {
+                        next();
+                    } else {
+                        next("/buyer/register_to_seller");
+                    }
+                },
                 children: [
                     {
-                        path: "all",
-                        name: "Tất cả",
-                        component: () => import("../pages/seller/product_list/all/index.vue"),
+                        path: "",
+                        name: "Trang chủ",
+                        component: () => import("../pages/seller/home/index.vue"),
                     },
                     {
-                        path: "all/:search",
-                        name: "",
-                        component: () => import("../pages/seller/product_list/all/index.vue"),
-                        props: true
+                        path: "setting/transport",
+                        name: "Cài đặt vận chuyển",
+                        component: () => import("../pages/seller/setting_transport/index.vue"),
                     },
                     {
-                        path: "active",
-                        name: "Đang hoạt động",
-                        component: () => import("../pages/seller/product_list/active/index.vue"),
+                        path: "product/new",
+                        name: "Thêm sản phẩm",
+                        component: () => import("../pages/seller/product_new/index.vue"),
                     },
                     {
-                        path: "active/:search",
-                        name: "",
-                        component: () => import("../pages/seller/product_list/active/index.vue"),
-                        props: true
+                        path: "product/edit/:id",
+                        name: "Sửa sản phẩm",
+                        component: () => import("../pages/seller/product_edit/index.vue"),
                     },
                     {
-                        path: "out-of-stock",
-                        name: "Hết hàng",
-                        component: () => import("../pages/seller/product_list/out_of_stock/index.vue"),
-                    },
-                    {
-                        path: "out-of-stock/:search",
-                        name: "",
-                        component: () => import("../pages/seller/product_list/out_of_stock/index.vue"),
-                        props: true
+                        path: "product/list",
+                        name: "Quản lý sản phẩm",
+                        component: () => import("../pages/seller/product_list/index.vue"),
+                        children: [
+                            {
+                                path: "all",
+                                name: "Tất cả",
+                                component: () => import("../pages/seller/product_list/all/index.vue"),
+                            },
+                            {
+                                path: "all/:search",
+                                name: "",
+                                component: () => import("../pages/seller/product_list/all/index.vue"),
+                                props: true
+                            },
+                            {
+                                path: "active",
+                                name: "Đang hoạt động",
+                                component: () => import("../pages/seller/product_list/active/index.vue"),
+                            },
+                            {
+                                path: "active/:search",
+                                name: "",
+                                component: () => import("../pages/seller/product_list/active/index.vue"),
+                                props: true
+                            },
+                            {
+                                path: "out-of-stock",
+                                name: "Hết hàng",
+                                component: () => import("../pages/seller/product_list/out_of_stock/index.vue"),
+                            },
+                            {
+                                path: "out-of-stock/:search",
+                                name: "",
+                                component: () => import("../pages/seller/product_list/out_of_stock/index.vue"),
+                                props: true
+                            },
+                        ]
                     },
                 ]
             },

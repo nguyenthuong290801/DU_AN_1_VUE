@@ -4,7 +4,9 @@ import Vuex from 'vuex';
 export default new Vuex.Store({
     state: {
         cart: [],
-        isAuth: false,
+        isAdmin: false,
+        isSeller: false,
+        isCustomer: false,
     },
     getters: {
         cartItems: state => state.cart,
@@ -28,8 +30,14 @@ export default new Vuex.Store({
                 state.cartItems[index].qty = qty;
             }
         },
-        updateAuthStatus(state, isAuthenticated) {
-            state.isAuth = isAuthenticated;
+        checkAuth(state, auth) {
+            if(auth == 'admin') {
+                state.isAdmin = true;
+            } else if (auth == 'seller') {
+                state.isSeller = true;
+            } else if (auth == 'customer') {
+                state.isCustomer = true;
+            }
         },
     },
 });

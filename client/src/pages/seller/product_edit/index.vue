@@ -375,7 +375,7 @@
             'shipping_method': this.shipping,
             'product_more': this.product_more
           };
-          console.log(data)
+
           axios.post(`/api/product/edit/${this.$route.params.id}`, data)
             .then(response => {
               console.log(response.data)

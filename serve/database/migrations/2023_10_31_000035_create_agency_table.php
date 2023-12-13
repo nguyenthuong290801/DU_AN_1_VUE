@@ -15,11 +15,13 @@ class Agency implements Migration
     {
         Schema::create('agency', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->integer('site_user_id');
+            $table->string('name_shop');
             $table->integer('address_id');
             $table->timestamps();
             $table->softDeletes();
             $table->foreignId('address_id', 'address');
+            $table->foreignId('site_user_id', 'site_user');
         });
     }
 

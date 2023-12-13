@@ -4,6 +4,7 @@ use Illuminate\framework\factory\Route;
 use App\controllers\API\ProductController;
 use App\controllers\API\AttributeOptionController;
 use App\controllers\auth\ApiController as AuthController;
+use App\controllers\seller\ApiController as SellerController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -33,3 +34,4 @@ Route::post('/api/auth/sms/login',  [AuthController::class, 'login']);
 Route::post('/api/user/new',  [AuthController::class, 'store']);
 Route::post('/api/user/update',  [AuthController::class, 'update']);
 Route::post('/api/user-facebook/new',  [AuthController::class, 'storeFacebook']);
+Route::post('/api/seller/new',  [SellerController::class, 'store']);

@@ -173,9 +173,22 @@ export default {
         .then(response => {
           try {
             if (response.data) {
-              this.$store.commit('updateAuthStatus', true);
-              this.$router.push('/portal');
-              localStorage.setItem('isAuth', true);
+              if (response.data.data.role == 'admin') {
+                this.$store.commit('checkAuth', response.data.data.role);
+                localStorage.setItem('isAdmin', true);
+              } else if (response.data.data.role == 'seller') {
+                this.$store.commit('checkAuth', response.data.data.role);
+                localStorage.setItem('isSeller', true);
+                localStorage.setItem('isCustomer', true);
+                localStorage.setItem('idCustomer', response.data.data.id);
+                localStorage.setItem('idAgency', response.data.data.agencyId);
+                this.$router.push('/');
+              } else {
+                this.$store.commit('checkAuth', 'customer');
+                localStorage.setItem('isCustomer', true);
+                localStorage.setItem('idCustomer', response.data.data.id);
+                this.$router.push('/');
+              }
             }
           } catch (error) {
             console.error('Error:', error);

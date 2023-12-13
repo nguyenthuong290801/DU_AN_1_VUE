@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
           <ul class="navbar-nav ">
             <li class="nav-item active nav-header-item">
-              <a class="nav-link nav-item-pipe" href="#">
+              <a class="nav-link nav-item-pipe" href="/portal/seller">
                 Kênh người bán
               </a>
             </li>
@@ -215,7 +215,7 @@ export default {
   line-height: 1.875rem;
   height: 1.875rem;
   padding-left: 0.9375rem;
-  //margin-bottom: 0.0625rem;
+  /* margin-bottom: 0.0625rem; */
   text-transform: capitalize;
   margin-top: 1.1rem;
 }

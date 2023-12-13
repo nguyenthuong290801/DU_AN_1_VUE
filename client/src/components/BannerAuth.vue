@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-left mt-3">
       <div class="d-flex justify-content-center align-items-center">
-        <a href="#!home">
+        <a href="/">
           <svg viewBox="0 0 192 65" class="header-logo-img" style="cursor: pointer">
             <g fill-rule="evenodd">
               <path fill="#fb5533"
@@ -35,6 +35,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0 150px;
+  background-color: #fff;
 }
 
 .header-logo-img {
@@ -109,7 +110,7 @@ export default {
   border-radius: 2px;
   position: relative;
   margin-right: .6rem;
-  //line-height: .9rem;
+  /* line-height: .9rem; */
 }
 
 .QR:after{

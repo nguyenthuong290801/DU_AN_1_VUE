@@ -4,7 +4,7 @@
     </label>
     <div class="fs-4 d-flex gap-2 align-items-center justify-content-start w-auto">
       <div @click="toggleIcons" class="cursor-pointer">
-        <i v-if="isIcon1Visible" class="bi bi-record2-fill text-danger"></i>
+        <i v-if="isIcon1Visible" class="bi bi-record2-fill" style="color: #EE4D2D;"></i>
         <i v-else class="bi bi-record2-fill text-secondary"></i>
       </div>
       <div class="border-end px-2">
@@ -37,7 +37,7 @@
     </label>
     <div class="fs-4 d-flex gap-2 align-items-center justify-content-start w-auto">
       <div @click="toggleIconsMore" class="cursor-pointer">
-        <i v-if="isIcon1VisibleMore" class="bi bi-record2-fill text-danger"></i>
+        <i v-if="isIcon1VisibleMore" class="bi bi-record2-fill" style="color: #EE4D2D;"></i>
         <i v-else class="bi bi-record2-fill text-secondary"></i>
       </div>
       <div class="px-2">

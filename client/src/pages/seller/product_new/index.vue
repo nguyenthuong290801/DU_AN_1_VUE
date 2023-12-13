@@ -152,6 +152,8 @@ export default {
         name: null,
         product_category_id: null,
         description: null,
+        site_user_id: localStorage.getItem('idCustomer'),
+        agency_id: localStorage.getItem('idAgency'),
       },
       product_media: [],
       product_detail: {
@@ -374,8 +376,10 @@ export default {
           'product_detail': this.product_detail,
           'variation_option': this.variation,
           'shipping_method': this.shipping,
-          'product_more': this.product_more
+          'product_more': this.product_more,
         };
+
+        console.log(data)
 
         axios.post(`/api/product/new`, data)
           .then(response => {

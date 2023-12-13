@@ -20,7 +20,8 @@ export default {
   computed: {
     shouldShowSidebar() {
       return this.$route.path !== '/portal/product/new';
-    }
+    },
+    
   }
 }
 </script>

@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import BannerAuth from '../components/BannerAuth.vue';
+import BannerAuth from '@/components/BannerAuth.vue';
 export default {
   components: {
     BannerAuth,

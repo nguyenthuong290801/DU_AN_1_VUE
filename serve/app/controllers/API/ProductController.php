@@ -40,7 +40,7 @@ class ProductController extends Controller
         foreach ($products as $product) {
 
             if (isset($product['id'])) {
-                $item = Model::where('ProductDetail', ['id' => $product['id']]);
+                $item = Model::where('ProductDetail', ['product_id' => $product['id']]);
 
                 foreach ($item as $key => $value) {
                     $productDetail[] = $value;
@@ -107,10 +107,10 @@ class ProductController extends Controller
         $ProductConfiguration = Model::all('ProductConfiguration');
 
         Response::json([
-            'status' => !empty($ProductConfiguration) ? 200 : 404,
+            'status' => !empty($ProductConfiguration) ? 200 : 200,
             'message' => !empty($ProductConfiguration) ? 'Success' : 'Not Found',
             'data' => !empty($ProductConfiguration) ? (object) $ProductConfiguration : null,
-        ], !empty($ProductConfiguration) ? 200 : 404);
+        ], !empty($ProductConfiguration) ? 200 : 200);
     }
 
     public function getProductVariation()
@@ -118,10 +118,10 @@ class ProductController extends Controller
         $ProductVariation = Model::all('VariationOption');
 
         Response::json([
-            'status' => !empty($ProductVariation) ? 200 : 404,
+            'status' => !empty($ProductVariation) ? 200 : 200,
             'message' => !empty($ProductVariation) ? 'Success' : 'Not Found',
             'data' => !empty($ProductVariation) ? (object) $ProductVariation : null,
-        ], !empty($ProductVariation) ? 200 : 404);
+        ], !empty($ProductVariation) ? 200 : 200);
     }
 
     public function store(Request $request)
@@ -146,8 +146,6 @@ class ProductController extends Controller
                     $file_name = 'image_' . uniqid() . '.' . $request->getImageExtensionFromBase64($media['url']);
                     $upload_path = $_SERVER['DOCUMENT_ROOT'] . '/upload/' . $file_name;
                     file_put_contents($upload_path, base64_decode($substring));
-                    $store_path = $_SERVER['DOCUMENT_ROOT'] . '/store/upload/' . $file_name;
-                    copy($upload_path, $store_path);
                     $media['url'] = '/upload/' . $file_name;
                 }
             }
@@ -259,8 +257,6 @@ class ProductController extends Controller
                     $file_name = 'image_' . uniqid() . '.' . $request->getImageExtensionFromBase64($media['url']);
                     $upload_path = $_SERVER['DOCUMENT_ROOT'] . '/upload/' . $file_name;
                     file_put_contents($upload_path, base64_decode($substring));
-                    $store_path = $_SERVER['DOCUMENT_ROOT'] . '/store/upload/' . $file_name;
-                    copy($upload_path, $store_path);
                     $media['url'] = '/upload/' . $file_name;
                 }
             }

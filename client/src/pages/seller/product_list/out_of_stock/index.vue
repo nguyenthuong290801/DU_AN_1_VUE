@@ -11,30 +11,33 @@
                 <td><label class="label-input w-auto text-center text-nowrap">Thao tác</label></td>
             </tr>
         </thead>
-        <tbody v-for="(product, index) in products" :key="index">
-                <tr v-for="(product, index) in products[index]" :key="index">
-                    <td><label class="label-input w-auto text-center text-nowrap">{{ product.name }}</label></td>
-                    <td><label class="label-input w-auto text-center text-nowrap">{{ product.SKU || 'Chưa có' }}</label>
-                    </td>
-                    <td><label class="label-input w-auto text-center text-nowrap">{{
-                        productCategory[index][0].category_name }}</label></td>
-                    <td><label class="label-input w-auto text-center text-nowrap">{{ productDetails[index][0].price
-                    }}</label>
-                    </td>
-                    <td><label class="label-input w-auto text-center text-nowrap">{{
-                        productDetails[index][0].qty_in_stock }}</label></td>
-                    <td>
-                        <i class="bi bi-pencil bg-danger text-white px-2 py-1 rounded me-2 cursor-pointer"></i>
-                        <i class="bi bi-trash bg-danger text-white px-2 py-1 rounded cursor-pointer"
-                            @click="openConfirmDeleteModal(product.id)"></i>
-                    </td>
-                </tr>
+        <tbody>
+            <tr v-for="(product, index) in products.data" :key="index">
+                <td v-if="product.qty_in_stock == 0"><label class="label-input w-auto text-center text-nowrap">{{ product.name || 'Chưa có' }}</label></td>
+                <td  v-if="product.qty_in_stock == 0"><label class="label-input w-auto text-center text-nowrap">{{ product.product_variation || 'Chưa có'
+                }}</label></td>
+                <td v-if="product.qty_in_stock == 0"><label class="label-input w-auto text-center text-nowrap">{{ product.product_category || 'Chưa có'
+                }}</label></td>
+                <td  v-if="product.qty_in_stock == 0"><label class="label-input w-auto text-center text-nowrap">{{ formatPrice(product.price) || 'Chưa có'
+                }}</label>
+                </td>
+                <td  v-if="product.qty_in_stock == 0"><label class="label-input w-auto text-center text-nowrap">{{ product.qty_in_stock || 'Hết hàng'
+                }}</label></td>
+                <td  v-if="product.qty_in_stock == 0">
+                    <i class="bi bi-pencil-fill text-danger px-2 py-1 rounded me-2 cursor-pointer"
+                        @click="handleEditProduct(product.id)"></i>
+                    <i class="bi bi-trash-fill text-danger px-2 py-1 rounded cursor-pointer"
+                        @click="openConfirmDeleteModal(product.id)"></i>
+                </td>
+            </tr>
         </tbody>
     </table>
     <div v-if="products.length <= 0" class="not-product d-flex flex-column">
         <img :src="d83309b" alt="" class="img-fluid">
         <div class="text-small">Không tìm thấy sản phẩm</div>
+
     </div>
+
     <form @submit.prevent="confirmDelete">
         <div v-if="showModal" class="modal-main">
             <div class="modal-box">
@@ -45,7 +48,7 @@
                     Bạn có chắc chắn muốn xóa sản phẩm này không?
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="bt-primary-ac me-2" @click="closeConfirmDeleteModal">Hủy</button>
+                    <button type="button" class="bt-primary-sc me-2" @click="closeConfirmDeleteModal">Hủy</button>
                     <button type="submit" class="bt-primary-ac" @click="confirmDelete">Xóa</button>
                 </div>
             </div>
@@ -56,28 +59,117 @@
 <script>
 import d83309b from '@/assets/img/sprite.src.pages.Index.d83309b.png';
 import axios from 'axios';
+import numeral from 'numeral';
 
 export default {
+    props: ['search'],
     data() {
         return {
             d83309b: d83309b,
             products: [],
             productDetails: [],
             productCategory: [],
+            productConfiguration: [],
+            productVariation: [],
             deletingProductIndex: null,
             showModal: false,
         };
     },
+    watch: {
+        search: function (newSearch, oldSearch) {
+            if (newSearch) {
+                this.fetchedSearch(this.search);
+            }
+        },
+    },
     mounted() {
-        this.fetched();
+        this.checkAndFetch();
+    },
+    beforeRouteUpdate(to, from, next) {
+        this.checkAndFetch();
+        next();
     },
     methods: {
-        fetched() {
-            axios.get('/api/product/list/out-of-stock')
+        fetchAPI() {
+            const apiPromise = axios.get('/api/product')
+            const apiPromise2 = axios.get('/api/product-detail')
+            const apiPromise3 = axios.get('/api/product-category')
+            const apiPromise4 = axios.get('/api/product-variation')
+            const apiPromise5 = axios.get('/api/product-configuration')
+            Promise.all([apiPromise, apiPromise2, apiPromise3, apiPromise4, apiPromise5])
                 .then(response => {
-                    this.products = response.data.data[0]
-                    this.productDetails = response.data.data[1]
-                    this.productCategory = response.data.data[2]
+                    this.products = response[0].data
+                    this.productDetails = response[1].data
+                    this.productCategory = response[2].data
+                    this.productVariation = response[3].data
+                    this.productConfiguration = response[4].data
+                    this.handleProduct(this.products, this.productDetails, this.productCategory, this.productVariation, this.productConfiguration)
+
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error)
+                });
+        },
+        handleProduct(products, productDetail, productCategory, productVariation, productConfiguration) {
+            Object.entries(products).forEach(([keyOne, valueOne]) => {
+                if (keyOne == 'data') {
+                    Object.entries(valueOne).forEach(([keyTwo, valueTwo]) => {
+                        Object.entries(productDetail).forEach(([keyThree, valueThree]) => {
+                            if (keyOne == 'data') {
+                                Object.entries(valueThree).forEach(([keyFour, valueFour]) => {
+                                    if (valueTwo.id === valueFour.product_id) {
+                                        if (
+                                            this.products.data[keyFour].price == null ||
+                                            this.products.data[keyFour].price == undefined ||
+                                            this.products.data[keyFour].qty_in_stock == null ||
+                                            this.products.data[keyFour].qty_in_stock == undefined
+                                        ) {
+                                            this.products.data[keyFour].price = valueFour.price
+                                            this.products.data[keyFour].qty_in_stock = valueFour.qty_in_stock
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                    })
+                }
+            })
+
+            Object.entries(products).forEach(([keyOne, valueOne]) => {
+                if (keyOne == 'data') {
+                    Object.entries(valueOne).forEach(([keyTwo, valueTwo]) => {
+                        Object.entries(productCategory).forEach(([keyThree, valueThree]) => {
+                            if (keyOne == 'data') {
+                                Object.entries(valueThree).forEach(([keyFour, valueFour]) => {
+                                    if (valueTwo.product_category_id === valueFour.id) {
+                                        if (
+                                            this.products.data[keyTwo].product_category == null ||
+                                            this.products.data[keyTwo].product_category == undefined
+                                        ) {
+                                            this.products.data[keyTwo].product_category = valueFour.category_name
+                                        }
+                                    }
+                                })
+                            }
+                        })
+                    })
+                }
+            })
+        },
+        formatPrice(price) {
+            return numeral(price).format('0,0 VND');
+        },
+        checkAndFetch() {
+            if (this.$route.params.search) {
+                this.fetchedSearch(this.$route.params.search);
+            } else {
+                this.fetchAPI();
+            }
+        },
+        fetchedSearch(search) {
+            axios.get(`/api/product/list/all/${search}`)
+                .then(response => {
+                    this.products.data = response.data.data
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error)
@@ -95,14 +187,19 @@ export default {
             axios.post(`/api/product/delete/${index}`)
                 .then(response => {
                     console.log(response.data.message)
-                    this.fetched();
+                    this.fetchAPI();
                     this.showModal = false;
                 })
                 .catch(error => {
                     console.error('Error fetching data:', error)
                 });
+        },
+        handleEditProduct(id) {
+            this.$router.push({
+                path: `/portal/seller/product/edit/${id}`
+            });
         }
-    }
+    },
 };
 </script>
 

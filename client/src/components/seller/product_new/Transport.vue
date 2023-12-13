@@ -278,6 +278,6 @@ export default {
 }
 
 .checkbox:checked + .checkbox-label {
-  background-color: #C6303E;;
+  background-color: #00c206;;
 }
 </style>

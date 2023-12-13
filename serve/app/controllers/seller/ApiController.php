@@ -11,4 +11,24 @@ use Illuminate\framework\Response;
 
 class ApiController extends Controller
 {
+    public function store()
+    {
+        $data = json_decode(file_get_contents("php://input"), true);
+
+        $agency = [
+            'site_user_id' => $data['site_user_id'],
+            'name_shop' => array_pop($data)
+        ];
+
+        Model::create('Agency', $agency);
+
+
+        Model::create('Role', $data);
+
+        Response::json([
+            'status' => 200,
+            'message' => 'Tạo thành công',
+            'data' => $data,
+        ], 200);
+    }
 }
